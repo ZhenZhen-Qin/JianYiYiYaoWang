@@ -1,0 +1,5 @@
+/node_modules
+/src/lib
+/src/sass
+*.mp4
+/doc
