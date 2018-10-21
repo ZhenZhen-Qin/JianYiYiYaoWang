@@ -1,5 +1,14 @@
+@charset "UTF-8";
+span.span2 {
+  right: 0;
+}
+
+span.span4 {
+  right: 0;
+}
+
 #banner .banner #lunbo {
-  margin: 10px 10px 10px 215px;
+  margin: 10px 10px 10px 15px;
   position: relative;
 }
 
@@ -25,13 +34,14 @@
 
 #banner .banner #lunbo > span {
   position: absolute;
+  top: 40%;
   z-index: 2;
   display: block;
   width: 40px;
   line-height: 80px;
   height: 80px;
   background: #ccc;
-  transition: opacity 1s;
+  transition: opacity 500ms;
   opacity: 0;
 }
 
@@ -39,15 +49,177 @@
   font-size: 44px;
 }
 
-#banner .banner #lunbo span.span1 {
-  top: 40%;
-}
-
-#banner .banner #lunbo span.span2 {
-  top: 40%;
-  right: 0;
-}
-
 #banner .banner #lunbo > span:hover {
   opacity: 0.5;
+}
+
+#banner .banner .banner_right {
+  margin-top: 10px;
+  width: 210px;
+  height: 254px;
+  position: relative;
+}
+
+#banner .banner .banner_right ul.tab_title {
+  border: 1px solid #dddddd;
+  height: 30px;
+  background: #F8F8F8;
+}
+
+#banner .banner .banner_right ul.tab_title > li {
+  float: left;
+  padding: 4px 10px;
+}
+
+#banner .banner .banner_right ul.tab_title .li_1 {
+  background: #FAFAFA;
+  border-bottom: 2px solid #FAFAFA;
+  border-right: 1px solid #dddddd;
+  border-left: 1px solid #dddddd;
+}
+
+#banner .banner .banner_right .showImg {
+  border: 1px solid #ddd;
+  border-top: 0 none;
+  height: 226px;
+}
+
+#banner .banner .banner_right .showImg ul.tab_show {
+  position: absolute;
+  width: 220px;
+  display: none;
+}
+
+#banner .banner .banner_right .showImg ul.tab_show > li {
+  position: absolute;
+}
+
+#banner .banner .banner_right .showImg ul.tab_show > li img {
+  width: 90%;
+}
+
+#banner .banner .banner_bottom {
+  margin-left: 14px;
+  width: 741px;
+  height: 140px;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+}
+
+#banner .banner .banner_bottom > span {
+  position: absolute;
+  top: 21%;
+  z-index: 2;
+  display: block;
+  width: 40px;
+  line-height: 80px;
+  height: 80px;
+  background: #ccc;
+  transition: opacity 500ms;
+  opacity: 0;
+}
+
+#banner .banner .banner_bottom > span i {
+  font-size: 44px;
+}
+
+#banner .banner .banner_bottom > span:hover {
+  opacity: 0.5;
+}
+
+#banner .banner .banner_bottom ul {
+  width: 3705px;
+  position: absolute;
+}
+
+#banner .banner .banner_bottom ul > li {
+  float: left;
+  border: 1px solid #dddddd;
+}
+
+#banner .banner .banner_bottom ul > li img {
+  width: 98%;
+}
+
+#banner .banner .banner_rb {
+  width: 210px;
+  height: 140px;
+  border: 1px solid #dddddd;
+}
+
+#banner .banner .banner_rb img {
+  width: 90%;
+}
+
+/*在线咨询*/
+.Online_Consulting {
+  width: 200px;
+  height: 37px;
+  position: fixed;
+  top: 40%;
+}
+
+.Online_Consulting > img {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.Online_Consulting p {
+  position: absolute;
+  border: 1px solid #dddddd;
+  background: #FFFFFF;
+  border-radius: 7px;
+}
+
+.Online_Consulting p.p1 {
+  width: 112px;
+  height: 211px;
+  top: -72px;
+  left: -124px;
+}
+
+.Online_Consulting p.p1 > img {
+  width: 98%;
+}
+
+.Online_Consulting p.p2 {
+  width: 151px;
+  height: 181px;
+  top: 53px;
+  left: -180px;
+  text-align: center;
+  line-height: 181px;
+}
+
+.Online_Consulting p.p2 > img {
+  width: 116px;
+  height: 139px;
+}
+
+.hot {
+  width: 965px;
+  height: 306px;
+  margin-top: 20px;
+}
+
+.hot .hot_title {
+  height: 33px;
+}
+
+.hot .hot_title h3 {
+  width: 200px;
+}
+
+.hot .hot_title ul li {
+  float: left;
+  width: 100px;
+  height: 100%;
+  font-size: 14px;
+  line-height: 33px;
+}
+
+.hot .hot_content {
+  border: 1px solid #ddd;
+  height: 273px;
 }

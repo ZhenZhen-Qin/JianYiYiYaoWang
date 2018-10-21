@@ -548,8 +548,8 @@
     </nav>
 
     <div id="banner">
-        <div class="con banner">
-            <div id="lunbo">
+        <div class="con clearfix banner">
+            <div id="lunbo" class="fl">
                 <div class="pageDiv"></div>
                 <span class="span1">
                     <i class="iconfont icon-jiantouzuo"></i>
@@ -558,22 +558,131 @@
                     <i class="iconfont icon-jiantouyou"></i>
                 </span>
             </div>
-            <div class="banner_right">
-                <ul>
-                    <li>包邮</li>
-                    <li>新品</li>
-                    <li>促销</li>
+            <div class="fr banner_right">
+                <div class="banner_right_page"></div>
+                <ul class="clearfix tab_title">
+                    <li idx="1">包邮</li>
+                    <li idx="2">新品</li>
+                    <li idx="3">促销</li>
                 </ul>
+                <!--show-->
+                <div class="clearfix showImg">
+                    <ul idx="1" class="tab_show tab_show1" >
+                        <li><img src="images/banner_right01.jpg" alt=""></li>
+                        <li><img src="images/banner_right02.jpg" alt=""></li>
+                        <li><img src="images/banner_right03.jpg" alt=""></li>
+                    </ul>
+                    <ul idx="2" class="tab_show tab_show2">
+                        <li><img src="images/banner_right02.jpg" alt=""></li>
+                        <li><img src="images/banner_right03.jpg" alt=""></li>
+                        <li><img src="images/banner_right01.jpg" alt=""></li>
+                    </ul>
+                    <ul idx="3" class="tab_show tab_show3">
+                        <li><img src="images/banner_right03.jpg" alt=""></li>
+                        <li><img src="images/banner_right01.jpg" alt=""></li>
+                        <li><img src="images/banner_right02.jpg" alt=""></li>
+                    </ul>
+                </div>
+
+
+
+            </div>
+
+            <!--banner 底部-->
+            <div class="fl banner_bottom">
+                <span class="span3">
+                    <i class="iconfont icon-jiantouzuo"></i>
+                </span>
+                <span class="span4">
+                    <i class="iconfont icon-jiantouyou span2"></i>
+                </span>
+                <ul>
+                    <li>
+                        <img src="images/banner_bottom01.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="images/banner_bottom02.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="images/banner_bottom03.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="images/banner_bottom04.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="images/banner_bottom0105.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="images/banner_bottom06.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="images/banner_bottom07.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="images/banner_bottom08.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="images/banner_bottom09.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="images/banner_bottom04.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="images/banner_bottom0105.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="images/banner_bottom06.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="images/banner_bottom07.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="images/banner_bottom08.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="images/banner_bottom09.jpg" alt="">
+                    </li>
+                </ul>
+            </div>
+            <div class="fr banner_rb">
+                <img src="images/banner_rb.jpg" alt="">
             </div>
         </div>
     </div>
+
+    <div id="hot" class="con">
+        <div class="hot ">
+            <div class="clearfix hot_title">
+                <h3 class="fl">热门推荐</h3>
+                <ul class="fl">
+                    <li>促销活动</li>
+                    <li>热销排行</li>
+                    <li>猜您喜欢</li>
+                </ul>
+            </div>
+            <div class="hot_content">
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="Online_Consulting">
+        <img src="images/swt_01.png" alt="" id="img1">
+        <img src="images/smwx.png" alt="" id="img2">
+        <p class="p1">
+            <img src="images/sw_02.png" alt="">
+        </p>
+        <p class="p2">
+            <img src="images/smwx_01.jpg" alt="">
+        </p>
+    </div>
+
 </body>
 <script src="js/jquery-3.2.1.js"></script>
 <script src="lib/jquery-Carousel/jquery-Carousel.js"></script>
 <script src="js/index.js"></script>
 <script>
-    jQuery(function($){
-        $("#lunbo").lmCarousel({imgs:["images/banner.jpg","images/banner1.jpg","images/banner2.jpg","images/banner3.jpg","images/banner4.jpg","images/banner5.jpg"],width:740,height:266,type:"fade",seamless : true});
-    })
+
 </script>
 </html>
