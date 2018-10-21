@@ -61,7 +61,6 @@ var idx = 0
 function movePic(){
     var timer = setInterval(function(){
         idx ++;
-        console.log(idx);
         $banBtmUl.animate({left:-idx*740},1000);
         if(idx >= 4){
             $banBtmUl[0].style.left = 0;
