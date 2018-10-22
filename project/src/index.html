@@ -5,13 +5,14 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>健一医药网</title>
     <link rel="stylesheet" href="css/base_px.css">
     <link rel="stylesheet" href="fonts/iconfont.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="lib/jquery-Carousel/jquery-Carousel.css">
     <link rel="stylesheet" href="css/index.css">
 
-    <title>健一医药网</title>
+
 </head>
 <body>
     <header id="header">
@@ -66,21 +67,56 @@
                     </p>
                 </form>
                 <div class="fr logo_right">
-                    <a href="#">
-                        <i class="iconfont icon-wode"></i>
-                        我的健一网
-                        <i class="iconfont icon-jiantouarrow483"></i>
-                    </a>
-                    <a href="#">
-                        <i class="iconfont icon-gouwuchekong"></i>
-                        购物车
-                        <i class="iconfont icon-jiantouyou"></i>
-                    </a>
-                    <a href="#">
-                        <i class="iconfont icon-gouwuchekong"></i>
-                        预约清单
-                        <i class="iconfont icon-jiantouyou"></i>
-                    </a>
+                    <div class="myJianyi">
+                        <a href="#">
+                            <i class="iconfont icon-wode"></i>
+                            我的健一网
+                            <i class="iconfont icon-jiantouarrow483"></i>
+                        </a>
+                        <ul  class="logo_ul1">
+                            <li>
+                                <a href="#">我的订单</a>
+                            </li>
+                            <li>
+                                <a href="#">我的评价</a>
+                            </li>
+                            <li>
+                                <a href="#">我的积分</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="shopCar">
+                        <a href="#">
+                            <i class="iconfont icon-gouwuchekong"></i>
+                            购物车
+                            <i class="iconfont icon-jiantouyou"></i>
+                        </a>
+                        <div class="logo_ul2">
+                            <!--无商品-->
+                            <div>
+                                <i class="iconfont icon-gouwuchekong"></i>
+                                <span>购物车空空如也赶紧选购吧</span>
+                            </div>
+                            <!--有商品的时候生成商品列表-->
+                        </div>
+                    </div>
+
+                    <div class="yuyue">
+                        <a href="#">
+                            <i class="iconfont icon-gouwuchekong"></i>
+                            预约清单
+                            <i class="iconfont icon-jiantouyou"></i>
+                        </a>
+                        <div class="logo_ul2">
+                            <!--无商品-->
+                            <div>
+                                <i class="iconfont icon-gouwuchekong"></i>
+                                <span>预约清单内暂时没有商品</span>
+                            </div>
+                            <!--有商品的时候生成商品列表-->
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -583,9 +619,6 @@
                         <li><img src="images/banner_right02.jpg" alt=""></li>
                     </ul>
                 </div>
-
-
-
             </div>
 
             <!--banner 底部-->
@@ -923,6 +956,7 @@
             </ul>
         </div>
     </div>
+
     <!--底部链接信息-->
     <div id="btmLink">
         <div class="con btmLink">
@@ -982,6 +1016,7 @@
 
 </body>
 <script src="js/jquery-3.2.1.js"></script>
+<script src="js/common.js"></script>
 <script src="lib/jquery-Carousel/jquery-Carousel.js"></script>
 <script src="js/index.js"></script>
 <script>

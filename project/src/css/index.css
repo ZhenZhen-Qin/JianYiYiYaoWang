@@ -1,4 +1,3 @@
-@charset "UTF-8";
 span.span2 {
   right: 0;
 }
@@ -150,51 +149,6 @@ span.span4 {
 
 #banner .banner .banner_rb img {
   width: 90%;
-}
-
-/*在线咨询*/
-.Online_Consulting {
-  width: 200px;
-  height: 37px;
-  position: fixed;
-  top: 40%;
-}
-
-.Online_Consulting > img {
-  display: block;
-  margin-bottom: 10px;
-}
-
-.Online_Consulting p {
-  position: absolute;
-  border: 1px solid #dddddd;
-  background: #FFFFFF;
-  border-radius: 7px;
-}
-
-.Online_Consulting p.p1 {
-  width: 112px;
-  height: 211px;
-  top: -72px;
-  left: -124px;
-}
-
-.Online_Consulting p.p1 > img {
-  width: 98%;
-}
-
-.Online_Consulting p.p2 {
-  width: 151px;
-  height: 181px;
-  top: 53px;
-  left: -180px;
-  text-align: center;
-  line-height: 181px;
-}
-
-.Online_Consulting p.p2 > img {
-  width: 116px;
-  height: 139px;
 }
 
 .hot {
@@ -417,45 +371,4 @@ span.span4 {
 
 .btmHot ul li img {
   width: 80px;
-}
-
-#btmLink {
-  height: 411px;
-  width: 100%;
-  background: #E6E6E6;
-  font-size: 12px;
-}
-
-#btmLink .btmLink .linktop {
-  padding-top: 16px;
-  box-sizing: border-box;
-  height: 97px;
-  border-bottom: 1px solid #D0D0D0;
-}
-
-#btmLink .btmLink .linktop p {
-  margin: 5px 10px;
-}
-
-#btmLink .btmLink .linktop p span {
-  color: #372D25;
-}
-
-#btmLink .btmLink .linktop p a {
-  color: #797A83;
-}
-
-#btmLink .btmLink .linkmid {
-  margin: 20px auto;
-  text-align: center;
-}
-
-#btmLink .btmLink .linkbtm {
-  text-align: center;
-  margin: 0 auto;
-}
-
-#btmLink .btmLink > p {
-  text-align: center;
-  color: #3E3A32;
 }

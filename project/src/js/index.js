@@ -62,8 +62,8 @@ function movePic(){
     var timer = setInterval(function(){
         idx ++;
         $banBtmUl.animate({left:-idx*740},1000);
-        if(idx >= 4){
-            $banBtmUl[0].style.left = 0;
+        if(idx >= 5){
+            //$banBtmUl[0].style.left = 0;
             idx = 1;
         }
     },2000);
@@ -79,21 +79,6 @@ $banBtmUl.on("mouseleave", function () {
     console.log("开启定时器")
 });
 
-$(".Online_Consulting")[0].style.left = document.body.clientWidth-38 +"px";
-$(".Online_Consulting .p1").hide();
-$(".Online_Consulting #img1").on("mouseenter",function () {
-    $(".Online_Consulting .p1").show(500);
-});
-$(".Online_Consulting #img1").on("mouseleave",function () {
-    $(".Online_Consulting .p1").hide(100);
-});
 
-$(".Online_Consulting .p2").hide();
-$(".Online_Consulting #img2").on("mouseenter",function () {
-    $(".Online_Consulting .p2").show(500);
-});
-$(".Online_Consulting #img2").on("mouseleave",function () {
-    $(".Online_Consulting .p2").hide(100);
-});
 
 

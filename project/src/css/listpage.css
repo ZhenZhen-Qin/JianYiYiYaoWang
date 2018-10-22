@@ -1,0 +1,392 @@
+#nav ul li.allGoodsCategory .menu_2 {
+  display: none;
+}
+
+#nav ul li.allGoodsCategory:hover .menu_2 {
+  display: block;
+}
+
+#main .main h3.mainTop {
+  height: 40px;
+  line-height: 40px;
+  font-size: 12px;
+}
+
+#main .main .mainLeft {
+  width: 200px;
+  margin-right: 10px;
+}
+
+#main .main .mainLeft ul {
+  border: 1px solid #dddddd;
+}
+
+#main .main .mainLeft ul li {
+  color: #3D3D50;
+  height: 31px;
+  line-height: 38px;
+  box-sizing: border-box;
+  font-size: 14px;
+  border-bottom: 1px solid #cccccc;
+  margin: 5px 10px 0px 10px;
+  vertical-align: bottom;
+}
+
+#main .main .mainLeft ul li a {
+  margin-left: 10px;
+}
+
+#main .main .mainLeft ul li.mainLeftTit {
+  background: #F5F5F5;
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+#main .main .mainLeft div.more {
+  height: 40px;
+  margin: 10px 0px;
+  border: 1px solid #dddddd;
+}
+
+#main .main .mainLeft div.more p {
+  height: 30px;
+  border-bottom: 1px solid #dddddd;
+  background: #F5F5F5;
+  line-height: 30px;
+  padding-left: 10px;
+}
+
+#main .main .mainLeft div.more p a {
+  float: right;
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+#main .main .mainLeft div.adv {
+  border-top: 2px solid #dddddd;
+}
+
+#main .main .mainLeft div.adv img {
+  width: 100%;
+  margin-top: 10px;
+}
+
+#main .main .mainRight {
+  width: 973px;
+}
+
+#main .main .mainRight > h3 {
+  width: 973px;
+  box-sizing: border-box;
+  height: 45px;
+  line-height: 45px;
+  font-size: 12px;
+  padding-left: 20px;
+  border: 1px solid #dddddd;
+  margin-bottom: 20px;
+}
+
+#main .main .mainRight .cuxiao {
+  height: 162px;
+}
+
+#main .main .mainRight .cuxiao h4 {
+  width: 973px;
+  box-sizing: border-box;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #dddddd;
+  font-size: 12px;
+  padding-left: 20px;
+}
+
+#main .main .mainRight .cuxiao ul {
+  width: 973px;
+  height: 122px;
+  box-sizing: border-box;
+  border: 1px solid #dddddd;
+}
+
+#main .main .mainRight .cuxiao ul li {
+  float: left;
+  width: 230px;
+  height: 122px;
+  padding: 10px 0 0 10px;
+  margin-right: 20px;
+  box-sizing: border-box;
+}
+
+#main .main .mainRight .cuxiao ul li img {
+  width: 100px;
+}
+
+#main .main .mainRight .cuxiao ul li p {
+  width: 110px;
+  font-size: 12px;
+}
+
+#main .main .mainRight .cuxiao ul li p span.price {
+  margin: 10px 5px;
+  font-size: 14px;
+  color: #C40000;
+}
+
+#main .main .mainRight .cuxiao ul li p a {
+  display: block;
+  padding: 4px 7px;
+  border: 1px solid #dddddd;
+  text-align: center;
+  margin-top: 15px;
+}
+
+#main .main .mainRight .cuxiao ul li p a:hover {
+  background: #C40000;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#main .main .mainRight .zyYs {
+  width: 973px;
+  height: 332px;
+  box-sizing: border-box;
+  border: 1px solid #dddddd;
+}
+
+#main .main .mainRight .zyYs h3 {
+  height: 46px;
+  line-height: 46px;
+  padding-left: 20px;
+  color: #C40000;
+  border-top: 2px solid #C40000;
+}
+
+#main .main .mainRight .zyYs > div h4 {
+  height: 38px;
+  line-height: 38px;
+  font-size: 14px;
+  color: #44332C;
+  margin: 0 20px;
+  border-bottom: 1px solid #dddddd;
+}
+
+#main .main .mainRight .zyYs > div h4:nth-child(2) {
+  padding-left: 40px;
+  font-size: 12px;
+}
+
+#main .main .mainRight .zyYs > div ul {
+  margin: 20px 20px;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #dddddd;
+}
+
+#main .main .mainRight .zyYs > div ul li {
+  float: left;
+  font-size: 12px;
+  width: 110px;
+}
+
+#main .main .mainRight .zyYs > div ul li span {
+  display: block;
+}
+
+#main .main .mainRight .zyYs > div ul li.pinpai {
+  width: 50px;
+  margin-left: 40px;
+  text-align: right;
+}
+
+#main .main .mainRight #goodlist > div.divTit {
+  height: 44px;
+  width: 100%;
+  background: #F5F5F5;
+  padding: 9px 10px 0px 10px;
+  box-sizing: border-box;
+}
+
+#main .main .mainRight #goodlist > div.divTit p {
+  font-size: 12px;
+}
+
+#main .main .mainRight #goodlist > div.divTit p span {
+  display: inline-block;
+  padding: 2px 4px;
+  border: 1px solid #dddddd;
+}
+
+#main .main .mainRight #goodlist > div.divTit > div.divTit {
+  font-size: 12px;
+}
+
+#main .main .mainRight #goodlist > div.divTit > div.divTit .btn {
+  display: inline-block;
+  padding: 2px 3px;
+  border: 1px solid #dddddd;
+  background: #FFFFFF;
+}
+
+#main .main .mainRight #goodlist ul.goodlist {
+  border-bottom: 1px solid #dddddd;
+}
+
+#main .main .mainRight #goodlist ul.goodlist li {
+  float: left;
+  width: 239px;
+  height: 363px;
+  font-size: 12px;
+  padding-left: 15px;
+  box-sizing: border-box;
+}
+
+#main .main .mainRight #goodlist ul.goodlist li img {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#main .main .mainRight #goodlist ul.goodlist li > a {
+  display: block;
+}
+
+#main .main .mainRight #goodlist ul.goodlist li > span {
+  display: block;
+  margin: 7px 0;
+  font-size: 14px;
+  color: #C40000;
+}
+
+#main .main .mainRight #goodlist ul.goodlist li > div > a {
+  color: #2091D2;
+}
+
+#main .main .mainRight #goodlist ul.goodlist li > div > p {
+  margin-top: 10px;
+}
+
+#main .main .mainRight #goodlist ul.goodlist li > div > p a {
+  float: left;
+  display: inline-block;
+  width: 90px;
+  height: 30px;
+  margin-right: 5px;
+  line-height: 30px;
+  text-align: center;
+  border: 1px solid #dddddd;
+}
+
+#main .main .mainRight #goodlist .setPage {
+  text-align: right;
+  height: 54px;
+  padding-top: 20px;
+  font-size: 14px;
+}
+
+#main .main .mainRight #goodlist .setPage a, #main .main .mainRight #goodlist .setPage div, #main .main .mainRight #goodlist .setPage form {
+  display: inline-block;
+}
+
+#main .main .mainRight #goodlist .setPage > a {
+  padding: 2px 3px;
+  border: 1px solid #dddddd;
+}
+
+#main .main .mainRight #goodlist .setPage form input:nth-child(1) {
+  width: 30px;
+  height: 24px;
+  border: 1px solid #dddddd;
+}
+
+#main .main .mainRight #goodlist .setPage form input:nth-child(2) {
+  height: 24px;
+  padding: 0 5px;
+}
+
+#main .main .mainRight .search {
+  padding-top: 30px;
+  height: 55px;
+  background: #F5F5F5;
+}
+
+#main .main .mainRight .search form {
+  width: 476px;
+  margin: 0 auto;
+  font-weight: bold;
+}
+
+#main .main .mainRight .search form span {
+  float: left;
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 20px;
+}
+
+#main .main .mainRight .search form input:nth-child(2) {
+  padding-left: 17px;
+  float: left;
+  width: 292px;
+  height: 43px;
+  border: 1px solid #dddddd;
+  font-size: 18px;
+}
+
+#main .main .mainRight .search form input:last-child {
+  float: left;
+  height: 44px;
+  width: 62px;
+  border: 1px solid #F4760F;
+  background: #F4760F;
+  color: #fff;
+  font-size: 18px;
+}
+
+.sortActive {
+  background: #C40000;
+  color: #FFFFFF;
+}
+
+.znNav {
+  border: 1px solid #dddddd;
+  font-size: 12px;
+  margin: 30px auto;
+}
+
+.znNav p {
+  padding: 20px;
+}
+
+.znNav p a {
+  display: inline-block;
+  margin: 8px 5px;
+}
+
+.reMen {
+  border: 1px solid #dddddd;
+}
+
+.reMen ul {
+  height: 218px;
+  border: 1px solid #dddddd;
+  border-top: 0 none;
+}
+
+.reMen ul li {
+  float: left;
+  width: 200px;
+  font-size: 12px;
+  padding: 17px 0 0 32px;
+}
+
+.reMen ul li img {
+  width: 80px;
+}
+
+h3.btmTit {
+  padding-left: 40px;
+  font-size: 20px;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #dddddd;
+}
