@@ -57,14 +57,14 @@ function clickLunbotu(ele,moveEle,fangxiang,juli){
 /*banner底部轮播图*/
 var timer1 = movePic();
 var timer2;
-var idx = 0
+var idx = 0;
 function movePic(){
     var timer = setInterval(function(){
         idx ++;
         $banBtmUl.animate({left:-idx*740},1000);
         if(idx >= 5){
-            //$banBtmUl[0].style.left = 0;
             idx = 1;
+            $banBtmUl[0].style.left = 0;
         }
     },2000);
     return timer;

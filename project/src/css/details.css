@@ -1,0 +1,253 @@
+#nav ul li.allGoodsCategory .menu_2 {
+  display: none;
+}
+
+#nav ul li.allGoodsCategory:hover .menu_2 {
+  display: block;
+}
+
+#main .main h3.mainTop {
+  height: 40px;
+  line-height: 40px;
+  font-size: 12px;
+}
+
+#main .main div.mainLeft {
+  width: 338px;
+}
+
+#main .main div.mainLeft > div.imgMsg {
+  border: 1px solid #dddddd;
+  margin: 10px 0;
+}
+
+#main .main div.mainLeft > div.imgMsg img {
+  width: 98%;
+}
+
+#main .main div.mainLeft > div.imgDetails {
+  height: 65px;
+}
+
+#main .main div.mainLeft > div.imgDetails > span {
+  display: inline-block;
+  width: 20px;
+  height: 65px;
+  line-height: 65px;
+  background: #E9E9E9;
+  border-radius: 3px;
+}
+
+#main .main div.mainLeft > div.imgDetails div {
+  display: inline-block;
+  margin: 0px 10px;
+}
+
+#main .main div.mainLeft > div.imgDetails div img {
+  width: 60px;
+  height: 60px;
+  border: 1px solid #dddddd;
+}
+
+#main .main div.mainLeft > p {
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+#main .main .mainRight {
+  width: 610px;
+  height: 338px;
+  margin: 10px;
+}
+
+#main .main .mainRight h4 {
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+#main .main .mainRight > p {
+  color: #C40000;
+}
+
+#main .main .mainRight div.price {
+  background: #F7F7F7;
+  padding-left: 40px;
+}
+
+#main .main .mainRight div.price > p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+#main .main .mainRight div.price > p span {
+  color: #C40000;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#main .main .mainRight div.price > div {
+  margin-left: 50px;
+  font-size: 12px;
+  color: #C40000;
+  position: relative;
+}
+
+#main .main .mainRight div.price > div span:nth-child(2) {
+  color: #4C85B6;
+}
+
+#main .main .mainRight div.price > div > div.xiadan {
+  display: none;
+  position: absolute;
+}
+
+#main .main .mainRight div.guige {
+  border-bottom: 1px dashed #dddddd;
+  padding-bottom: 15px;
+}
+
+#main .main .mainRight div.guige p {
+  font-size: 12px;
+  margin-top: 15px;
+  padding-left: 15px;
+}
+
+#main .main .mainRight div.xzguige {
+  padding-left: 30px;
+  margin: 10px 0px 17px;
+}
+
+#main .main .mainRight div.xzguige > span {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+#main .main .mainRight div.xzguige ul li {
+  float: left;
+  width: 155px;
+  height: 35px;
+  box-sizing: border-box;
+  border: 1px solid #dddddd;
+  padding: 0 4px;
+  margin: 2px 5px;
+}
+
+#main .main .mainRight div.xzguige ul li > span {
+  float: right;
+  line-height: 35px;
+  font-size: 12px;
+}
+
+#main .main .mainRight div.xzguige ul li s {
+  display: inline-block;
+  width: 27px;
+  height: 28px;
+  background: url("../images/goodimg/01.jpg") no-repeat;
+  background-size: cover;
+  margin-top: 3px;
+}
+
+#main .main .mainRight #addCar {
+  margin-left: 40px;
+  display: inline-block;
+  width: 158px;
+  height: 50px;
+  line-height: 50px;
+  background: #C40002;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+#main .main .mainRight div#number {
+  height: 50px;
+  width: 134px;
+  padding-left: 47px;
+}
+
+#main .main .mainRight div#number > span {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+#main .main .mainRight div#number input {
+  float: right;
+  margin-left: 8px;
+  width: 48px;
+  height: 48px;
+  border: 1px solid #cccccc;
+  border-right: 0 none;
+}
+
+#main .main .mainRight div#number p span {
+  width: 24px;
+  height: 23px;
+  line-height: 24px;
+  text-align: center;
+  display: block;
+  border: 1px solid #cccccc;
+  background: #FFFFFF;
+}
+
+#main .main .haoping {
+  width: 220px;
+  height: 210px;
+  border: 1px solid #dddddd;
+}
+
+#main .main .haoping h4 {
+  height: 30px;
+  line-height: 30px;
+  padding-left: 20px;
+  padding-left: 20px;
+  border-bottom: 1px solid #dddddd;
+}
+
+#main .main .haoping > div {
+  padding-left: 20px;
+  font-size: 14px;
+}
+
+#main .main .haoping > div > p {
+  height: 60px;
+  line-height: 42px;
+}
+
+#main .main .haoping > div > p span {
+  font-size: 36px;
+  color: #C40000;
+  margin-left: 20px;
+}
+
+#main .main .haoping > div ul#hpTiao {
+  font-size: 12px;
+}
+
+#main .main .haoping > div ul#hpTiao li {
+  height: 30px;
+}
+
+#main .main .haoping > div ul#hpTiao li span:nth-child(1) {
+  float: left;
+  width: 53px;
+  text-align: center;
+}
+
+#main .main .haoping > div ul#hpTiao li span:nth-child(2) {
+  display: block;
+  height: 10px;
+  background: #C40000;
+  float: left;
+}
+
+#main .main .haoping > div ul#hpTiao li span.haoP {
+  width: 130px;
+}
+
+#main .main .haoping > div ul#hpTiao li span.zhongP {
+  width: 20px;
+}
+
+#main .main .haoping > div ul#hpTiao li span.chaP {
+  width: 10px;
+}
