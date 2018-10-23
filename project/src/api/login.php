@@ -1,14 +1,13 @@
 <?php
-    $severname = "localhost";
+    $servername = "localhost";
     $username = "root";
     $password = "";
-    $dbname = "goodms";
-
-    $conn = new myspli($severname,$username,$password,$dbname);
+    $dbname = "jianyimsg";
+    $conn = new myspli($servername,$username,$password,$dbname);
     if($conn->connect_error){
         die($conn->$connect_error);
     }
-    $sql = 'select * from goodsmsg ORDER BY date asc';
+    $sql = 'select * from goodsmsg ORDER BY price asc';
     $result = $conn->query($sql);
     $arr = $result->fetch_all(MYSQLI_ASSOC);
     echo json_encode($arr,JSON_UNESCAPED_UNICODE);
