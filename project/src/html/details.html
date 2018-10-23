@@ -611,7 +611,7 @@
                     <p>价格：<span>￥<s>214</s></span></p>
                     <div>
                         <span>手机下单更方便</span>
-                        <span>(扫码下单)</span>
+                        <span class="sm">(扫码下单)</span>
                         <div class="xiadan">
                             <img src="../images/details/erweima.png" alt="">
                         </div>
@@ -647,10 +647,10 @@
                     <div id="number" class="fl">
                         <span>数&nbsp;&nbsp;量:</span>
                         <p class="fr">
-                            <span>+</span>
-                            <span> -</span>
+                            <span class="btnJia">+</span>
+                            <span class="btnJian"> -</span>
                         </p>
-                        <input type="text">
+                        <input type="text" id="goodNum">
                     </div>
 
                     <a href="#"  id="addCar" class="fl">
@@ -663,6 +663,7 @@
 
             </div>
 
+            <!--商品评价-->
             <div class="fr haoping">
                 <h4>商品评价</h4>
                 <div>
@@ -695,16 +696,298 @@
 
             </div>
 
-            <!--人气组合-->
-            <div class="zuhe">
+        </div>
+
+        <!--人气组合-->
+        <div class="con zuhe">
+            <ul class="clearfix zuheTit">
+                <li id="zh_tuijian">热门推荐</li>
+                <li id="zh_renqi">人气组合</li>
+            </ul>
+            <div class="zh_show">
+                <!--热门推荐-->
+                <ul class="tjGood">
+                    <li>
+                        <img src="../images/goodimg/04.jpg" alt="">
+                        <p>胎菊 50g</p>
+                        <span>￥<s>29.00</s></span>
+                        <a href="#"><i class="iconfont icon-gouwuchekong"></i>加入购物车</a>
+                    </li>
+                    <li>
+                        <img src="../images/goodimg/02.jpg" alt="">
+                        <p>胎菊 50g</p>
+                        <span>￥<s>29.00</s></span>
+                        <a href="#"><i class="iconfont icon-gouwuchekong"></i>加入购物车</a>
+                    </li>
+                    <li>
+                        <img src="../images/goodimg/03.jpg" alt="">
+                        <p>胎菊 50g</p>
+                        <span>￥<s>29.00</s></span>
+                        <a href="#"><i class="iconfont icon-gouwuchekong"></i>加入购物车</a>
+                    </li>
+                </ul>
+
+                <!--人气组合-->
+                <ul class="rqGood">
+                    <li>
+                        <img src="../images/goodimg/01.jpg" alt="">
+                        <p>胎菊 50g</p>
+                        <span>￥<s>29.00</s></span>
+                    </li>
+                    <li>
+                        <img src="../images/goodimg/09.jpg" alt="">
+                        <p>铭德堂 铭徳堂 罗汉果 1只 罗汉果</p>
+                        <span>￥<s>9.00</s></span>
+                    </li>
+                    <li>
+                        <p>组合价：</p>
+                        <span class="fs20">￥<s>29.00</s></span>
+                        <a href="#"><i class="iconfont icon-gouwuchekong"></i>加入购物车</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--同类品牌-->
+        <div class="con clearfix SamePinpai">
+            <div class="fl sameLeft">
+                <h3>同类品牌</h3>
+                <div>
+                    <a href="#">同仁堂</a>
+                    <a href="#">忆江南</a>
+                    <a href="#">哈哈</a>
+
+                    <a href="#">同仁堂</a>
+                    <a href="#">同仁是堂</a>
+                    <a href="#">任务仁堂</a>
+                    <a href="#">同仁堂</a>
+                    <a href="#">本才车堂</a>
+                    <a href="#">同仁堂</a>
+                    <a href="#">同仁堂</a>
+                    <a href="#">同堂</a>
+                    <a href="#">仁堂</a>
+                    <a href="#">同仁堂</a>
+                    <a href="#">同仁堂</a>
+                    <a href="#">同仁堂</a>
+                    <a href="#">同仁堂</a>
+                    <a href="#">仁堂</a>
+                    <a href="#">同仁堂</a>
+                    <a href="#">同仁堂仁</a>
+                    <a href="#">同仁堂</a>
+                    <a href="#">来来来</a>
+                    <a href="#">同仁堂</a>
+                    <a href="#">同仁堂</a>
+                    <a href="#">同仁堂</a>
+                    <a href="#">杨欣悦</a>
+                    <a href="#">养音乐</a>
+                    <a href="#">健一网</a>
+                    <a href="#">姿美堂</a>
+                    <a href="#">美滋滋</a>
+                    <a href="#">傻狍子</a>
+                </div>
+                <p>
+                    <img src="../images/listpage/mainLeft_01.jpg" alt="">
+                    <img src="../images/listpage/mainLeft_02.jpg" alt="">
+                    <img src="../images/listpage/mainLeft_03.jpg" alt="">
+                    <img src="../images/listpage/mainLeft_04.jpg" alt="">
+                    <img src="../images/listpage/mainLeft_05.jpg" alt="">
+                    <img src="../images/listpage/mainLeft_06.jpg" alt="">
+                    <img src="../images/listpage/mainLeft_07.jpg" alt="">
+                </p>
 
             </div>
+            <div class="fr clearfix sameRight">
+                <div class="clearfix sR_top">
+                    <ul class="fl clearfix">
+                        <li>商品信息</li>
+                        <li>说明书</li>
+                        <li>累计评价</li>
+                        <li>成交记录</li>
+                        <li>大家都在问</li>
+                    </ul>
+                    <a href="#" class="fr jiaGou">加入购物车</a>
+                </div>
+                <div class="sR_btm">
+                    <div>
+                        <h6>
+                            商品品牌：<span>鞠晨</span>
+                        </h6>
+                        <div>
+                            <p>产品名称： 菊晨 胎菊王(特级) 40g</p>
+                            <p>商品类型：参茸饮片生产厂家：桐乡市同福三星杭白菊制品厂</p>
+                            <p>温馨提示：部分商品包装更换频繁，如货品与图片 不完全一致，请以收到的商品实物为准，本商城确保商品为原厂正品。</p>
+                        </div>
+                    </div>
+                    <p>
+                        <img src="../images/details/adv_01.jpg" alt="">
+                        <img src="../images/details/adv_02.jpg" alt="">
+                        <img src="../images/details/adv_03.jpg" alt="">
+                        <img src="../images/details/adv_04.jpg" alt="">
+                        <img src="../images/details/adv_05.jpg" alt="">
+                        <img src="../images/details/adv_06.jpg" alt="">
+                        <img src="../images/details/adv_07.jpg" alt="">
+                        <img src="../images/details/adv_08.jpg" alt="">
+                        <img src="../images/details/adv_09.jpg" alt="">
+                        <img src="../images/details/adv_10.jpg" alt="">
+                    </p>
 
+                </div>
+                <div class="clearfix sR_top">
+                    <ul class="fl clearfix">
+                        <li>全部评价</li>
+                        <li>好评</li>
+                        <li>中评</li>
+                        <li>差评</li>
+                    </ul>
+                    <a href="#" class="fr jiaGou">我要评价</a>
+                </div>
+
+                <!--这里是评价信息-->
+                <div class="comment">
+                    <ul class="commentList">
+                        <li>
+                            <img class="fl" src="../images/details/%5Btouxiang.png" alt="">
+                            <div class="fl">
+                                <span class="star">
+                                    <i>
+                                        <!--背景图片是星星-->
+                                    </i>
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+                                </span>
+                                <span>非常满意</span>
+                                <p class="pj_conent">
+                                    还可以的非常好，健一网还是不错的，足不出户，价格还比实体店优惠。最主要想买什么种类都比较齐全。常备药选健一！
+                                </p>
+                            </div>
+                            <p id="show_name">
+                                <span class="show_name">(隐身用户)</span>
+                            </p>
+                        </li>
+                        <li>
+                            <img class="fl" src="../images/details/%5Btouxiang.png" alt="">
+                            <div class="fl">
+                                <span class="star">
+                                    <i>
+                                        <!--背景图片是星星-->
+                                    </i>
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+                                </span>
+                                <span>非常满意</span>
+                                <p class="pj_conent">
+                                    还可以的非常好，健一网还是不错的，足不出户，价格还比实体店优惠。最主要想买什么种类都比较齐全。常备药选健一！
+                                </p>
+                            </div>
+                            <p id="show_name">
+                                <span class="show_name">(隐身用户)</span>
+                            </p>
+                        </li>
+                    </ul>
+                    <div class="clearfix setPage">
+                        <span>共 <s>224</s> 条</span>
+                        <a href="#">首页</a>
+                        <a href="#">上一页</a>
+                        <div class="page"></div>
+                        <a href="#">下一页</a>
+                        <a href="#">末页</a>
+                        <form action="">
+                            第 <input type="number">页
+                            <input type="button" value="确定">
+                        </form>
+                    </div>
+                </div>
+
+            </div>
         </div>
+    </div><!--内容结束-->
+
+    <!--站内导航-->
+    <div class="con znNav">
+        <h3 class="btmTit">站内导航</h3>
+        <p>
+            <a href="#">三金片</a>
+            <a href="#">三金片</a>
+            <a href="#">三金片</a>
+            <a href="#">三金片</a>
+            <a href="#">三金片</a>
+            <a href="#">三金片</a>
+            <a href="#">三金片</a>
+            <a href="#">三金片</a>
+            <a href="#">三金片</a>
+            <a href="#">三金片</a>
+            <a href="#">三金片</a>
+            <a href="#">三金片</a>
+            <a href="#">三金片</a>
+            <a href="#">三金片</a>
+            <a href="#">三金片</a>
+            <a href="#">三金片</a>
+            <a href="#">三金片</a>
+            <a href="#">三金片</a>
+            <a href="#">三金片</a>
+            <a href="#">三金片</a>
+            <a href="#">三金片</a>
+            <a href="#">三金片</a>
+            <a href="#">三金片</a>
+            <a href="#">三金片</a>
+            <a href="#">三金片</a>
+            <a href="#">三金片</a>
+            <a href="#">三金片</a>
+            <a href="#">三金片</a>
+        </p>
     </div>
 
-    <!---->
+    <!--热门推荐-->
+    <div class="con reMen">
+        <h3 class="btmTit">热门推荐</h3>
+        <!--轮播热门-->
+        <ul>
+            <li>
+                <img src="../images/btmHot_02.jpg" alt="">
+                <a href="#">东郊阿娇 铁盒 袋装</a>
+            </li>
+            <li>
+                <img src="../images/btmHot_03.jpg" alt="">
+                <a href="#">东郊阿娇 铁盒 袋装</a>
+            </li>
+            <li>
+                <img src="../images/btmHot_04.jpg" alt="">
+                <a href="#">东郊阿娇 铁盒 袋装</a>
+            </li>
+            <li>
+                <img src="../images/btmHot_05.jpg" alt="">
+                <a href="#">东郊阿娇 铁盒 袋装</a>
+            </li>
+            <li>
+                <img src="../images/btmHot_06.jpg" alt="">
+                <a href="#">东郊阿娇 铁盒 袋装</a>
+            </li>
+            <li>
+                <img src="../images/btmHot_07.jpg" alt="">
+                <a href="#">东郊阿娇 铁盒 袋装</a>
+            </li>
+            <li>
+                <img src="../images/btmHot_08.jpg" alt="">
+                <a href="#">东郊阿娇 铁盒 袋装</a>
+            </li>
+            <li>
+                <img src="../images/btmHot_09.jpg" alt="">
+                <a href="#">东郊阿娇 铁盒 袋装</a>
+            </li>
+            <li>
+                <img src="../images/btmHot_10.jpg" alt="">
+                <a href="#">东郊阿娇 铁盒 袋装</a>
+            </li>
+            <li>
+                <img src="../images/btmHot_02.jpg" alt="">
+                <a href="#">东郊阿娇 铁盒 袋装</a>
+            </li>
 
+        </ul>
+    </div>
 
 
 
@@ -769,4 +1052,5 @@
 <script src="../js/jquery-3.2.1.js"></script>
 <script src="../lib/jquery-Carousel/jquery-Carousel.js"></script>
 <script src="../js/common.js"></script>
+<script src="../js/details.js"></script>
 </html>

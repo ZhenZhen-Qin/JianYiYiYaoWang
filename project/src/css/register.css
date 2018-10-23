@@ -1,0 +1,113 @@
+body {
+  width: 100%;
+  height: 100%;
+  background: #F8F8F8;
+}
+
+body h1.con1 {
+  margin: 40px auto 5px;
+}
+
+body h1.con1 > p {
+  display: inline-block;
+  width: 120px;
+  font-size: 26px;
+  line-height: 53px;
+  padding-left: 40px;
+}
+
+body h1.con1 span {
+  line-height: 60px;
+}
+
+body h1.con1 span s {
+  color: #C40000;
+  font-weight: bold;
+}
+
+body div.login {
+  height: 484px;
+  box-sizing: border-box;
+  background: #FFFFFF;
+  border: 5px solid #F0F0F0;
+}
+
+body div.login div {
+  width: 300px;
+  height: 444px;
+  box-sizing: border-box;
+  padding: 40px 25px;
+}
+
+body div.login div img {
+  width: 250px;
+}
+
+body div.login form {
+  box-sizing: border-box;
+  padding-left: 30px;
+  width: 676px;
+  padding-top: 40px;
+}
+
+body div.login form h3 {
+  margin: 10px 0 30px;
+  padding-left: 40px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+body div.login form label {
+  color: #46495C;
+  display: inline-block;
+  width: 80px;
+}
+
+body div.login form > input {
+  width: 270px;
+  height: 40px;
+  border: 1px solid #dddddd;
+  margin: 10px 0;
+}
+
+body div.login form input#YanZM {
+  width: 80px;
+}
+
+body div.login form span.setYzm {
+  display: inline-block;
+  padding: 3px 7px;
+  background: #e2e2e2;
+}
+
+body div.login form > p {
+  font-size: 12px;
+}
+
+body div.login form > p a {
+  color: #4183c4;
+}
+
+body div.login form input#registerBtn {
+  margin: 30px 0 0 30px;
+  height: 50px;
+  background: #C40000;
+  font-size: 26px;
+  color: #FFFFFF;
+}
+
+.con1 {
+  width: 987px;
+  margin: 0 auto;
+}
+
+footer.foot {
+  margin: 50px auto;
+}
+
+footer.foot p {
+  font-size: 12px;
+  text-align: center;
+  line-height: 20px;
+  color: #706665;
+}

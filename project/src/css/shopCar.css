@@ -1,0 +1,158 @@
+.con {
+  width: 994px;
+  margin: 0px auto;
+}
+
+header {
+  font-size: 14px;
+}
+
+header a {
+  color: #000;
+}
+
+.logo h1 {
+  height: 91px;
+  padding-top: 30px;
+  box-sizing: border-box;
+}
+
+.logo h1 > p span:nth-child(1) {
+  color: #C40000;
+}
+
+.logo > p {
+  margin: 10px 0;
+}
+
+#shopcar {
+  min-height: 500px;
+}
+
+#shopcar .shopcar h3 {
+  color: #2F3A4E;
+}
+
+#shopcar .shopcar h3 span i {
+  color: #C40000;
+}
+
+#shopcar .shopcar h3 span:nth-child(1) {
+  font-size: 18px;
+}
+
+#shopcar .shopcar .carContent {
+  margin: 10px auto;
+  border: 3px solid #dddddd;
+  padding: 10px;
+}
+
+#shopcar .shopcar .carContent ul.carTit {
+  margin: 10px 0;
+}
+
+#shopcar .shopcar .carContent ul.carTit li {
+  float: left;
+  width: 78px;
+  text-align: center;
+  border-right: 1px solid #dddddd;
+}
+
+#shopcar .shopcar .carContent ul.carTit li:nth-child(1) {
+  width: 410px;
+}
+
+#shopcar .shopcar .carContent ul.myGoods {
+  min-height: 127px;
+  padding: 10px;
+  border-top: 1px solid #dddddd;
+}
+
+#shopcar .shopcar .carContent ul.myGoods li {
+  height: 127px;
+  background: #FFF4E8;
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  font-size: 12px;
+}
+
+#shopcar .shopcar .carContent ul.myGoods li img {
+  width: 100px;
+  border: 1px solid #dddddd;
+  margin: 10px;
+}
+
+#shopcar .shopcar .carContent ul.myGoods li span, #shopcar .shopcar .carContent ul.myGoods li p {
+  display: inline-block;
+  text-align: center;
+}
+
+#shopcar .shopcar .carContent ul.myGoods li .uname {
+  width: 278px;
+}
+
+#shopcar .shopcar .carContent ul.myGoods li > span {
+  width: 75px;
+}
+
+#shopcar .shopcar .carContent ul.myGoods li > span input {
+  width: 28px;
+  height: 20px;
+  border: 1px solid #dddddd;
+}
+
+#shopcar .shopcar .carContent ul.myGoods li > span s {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  border: 1px solid #dddddd;
+}
+
+#shopcar .shopcar .carContent ul.myGoods li > p > span {
+  margin-right: 3px;
+}
+
+#shopcar .shopcar .quanxuan {
+  font-size: 12px;
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid #dddddd;
+  padding-left: 20px;
+}
+
+#shopcar .shopcar .quanxuan p:nth-child(1) a {
+  margin: 0 10px;
+  color: #372D25;
+}
+
+#shopcar .shopcar .quanxuan p:nth-child(2) a {
+  display: inline-block;
+  padding: 0px 26px;
+  margin-left: 10px;
+  background: #C40000;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+#shopcar .shopcar .quanxuan p:nth-child(2) span s {
+  color: #C40000;
+}
+
+#shopcar .shopcar .quanxuan p:nth-child(2) span:nth-child(2) s {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+footer {
+  border-top: 3px solid #dddddd;
+  padding-top: 30px;
+}
+
+footer div p {
+  font-size: 12px;
+  text-align: center;
+  line-height: 20px;
+  color: #706665;
+}

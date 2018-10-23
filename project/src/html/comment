@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>详情页</title>
+    <link rel="stylesheet" href="../css/base_px.css">
+    <link rel="stylesheet" href="../fonts/iconfont.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/details.css">
+</head>
+<body>
+<!--头部信息-->
+<header id="header">
+    <div class="con clearfix header">
+        <div class="clearfix top">
+            <p class="fl">
+                <span>收藏健一医药网</span>
+                <span>设为首页</span>
+            </p>
+            <ul class="clearfix fr">
+                <li>
+                    您好！欢迎来到健一网网上药店
+                </li>
+                <li class="denglu">
+                    [<a href="#">登录</a>]
+                </li>
+                <li class="denglu">
+                    [<a href="#">注册</a>]
+                </li>
+                <li>
+                    <a href="#">我的订单</a>
+                </li>
+                <li>
+                    <a href="#">网站导航</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="iconfont icon-shouji"></i>
+                        手机健一
+                    </a>
+                </li>
+                <li>全国热线： 4007-800-800</li>
+            </ul>
+        </div>
+        <div class="clearfix logo">
+            <h1 class="fl">
+                <a href="#">健一医药</a>
+            </h1>
+            <form action="" class="clearfix fl seach">
+                <input type="text" class="fl inputText" placeholder="请输入关键字：商品名或疾病名">
+                <input type="button" class="fr seachBtn" value="">
+                <i class="iconfont icon-seach"></i>
+                <p class="fl">
+                    <span>保温杯</span>
+                    <span>保温杯</span>
+                    <span>保温杯</span>
+                    <span>保温杯</span>
+                    <span>保温杯</span>
+                    <span>保温杯</span>
+                    <span>保温杯</span>
+                    <span>保温杯</span>
+                </p>
+            </form>
+            <div class="fr logo_right">
+                <div class="myJianyi">
+                    <a href="#">
+                        <i class="iconfont icon-wode"></i>
+                        我的健一网
+                        <i class="iconfont icon-jiantouarrow483"></i>
+                    </a>
+                    <ul  class="logo_ul1">
+                        <li>
+                            <a href="#">我的订单</a>
+                        </li>
+                        <li>
+                            <a href="#">我的评价</a>
+                        </li>
+                        <li>
+                            <a href="#">我的积分</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="shopCar">
+                    <a href="#">
+                        <i class="iconfont icon-gouwuchekong"></i>
+                        购物车
+                        <i class="iconfont icon-jiantouyou"></i>
+                    </a>
+                    <div class="logo_ul2">
+                        <!--无商品-->
+                        <div>
+                            <i class="iconfont icon-gouwuchekong"></i>
+                            <span>购物车空空如也赶紧选购吧</span>
+                        </div>
+                        <!--有商品的时候生成商品列表-->
+                    </div>
+                </div>
+
+                <div class="yuyue">
+                    <a href="#">
+                        <i class="iconfont icon-gouwuchekong"></i>
+                        预约清单
+                        <i class="iconfont icon-jiantouyou"></i>
+                    </a>
+                    <div class="logo_ul2">
+                        <!--无商品-->
+                        <div>
+                            <i class="iconfont icon-gouwuchekong"></i>
+                            <span>预约清单内暂时没有商品</span>
+                        </div>
+                        <!--有商品的时候生成商品列表-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!--导航-->
+<nav id="nav">
+    <ul class="con nav">
+        <li class="allGoodsCategory">
+            <a href="#">全部商品分类</a>
+            <ul class="menu_2">
+                <li>
+                    <a href="#">健一热卖</a>
+                    <i class="iconfont icon-jiantouyou fr"></i>
+                    <div class="clearfix menu_3">
+                        <div class="fl menu3_left">
+                            <ul class="clearfix">
+                                <li>
+                                    <a href="#" class="first_li">测血糖1</a>
+                                </li>
+                                <li>
+                                    <a href="#">血糖仪</a>
+                                </li>
+                                <li>
+                                    <a href="#">测试纸</a>
+                                </li>
+                                <li>
+                                    <a href="#">强生</a>
+                                </li>
+                            </ul>
+                            <ul class="clearfix">
+                                <li>
+                                    <a href="#" class="first_li">测血压</a>
+                                </li>
+                                <li>
+                                    <a href="#">腕式血压计</a>
+                                </li>
+                                <li>
+                                    <a href="#">手臂血压计</a>
+                                </li>
+                                <li>
+                                    <a href="#">九安</a>
+                                </li>
+                                <li>
+                                    <a href="#">善存</a>
+                                </li>
+                            </ul>
+                            <ul  class="clearfix">
+                                <li>
+                                    <a href="#" class="first_li">测血糖</a>
+                                </li>
+                                <li>
+                                    <a href="#">血糖仪</a>
+                                </li>
+                                <li>
+                                    <a href="#">测试纸</a>
+                                </li>
+                                <li>
+                                    <a href="#">强生</a>
+                                </li>
+                            </ul>
+                            <ul class="clearfix">
+                                <li>
+                                    <a href="#" class="first_li">测血压</a>
+                                </li>
+                                <li>
+                                    <a href="#">腕式血压计</a>
+                                </li>
+                                <li>
+                                    <a href="#">手臂血压计</a>
+                                </li>
+                                <li>
+                                    <a href="#">九安</a>
+                                </li>
+                                <li>
+                                    <a href="#">善存</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="fr menu3_right">
+                            <h4>热门推荐</h4>
+                            <div>
+                                <span>罗门</span>
+                                <span>百川</span>
+                                <span>玉兔</span>
+                                <span>森田药妆</span>
+                                <span>罗门</span>
+                                <span>百川</span>
+                                <span>玉兔</span>
+                                <span>森田药妆</span>
+                                <span>罗门</span>
+                                <span>百川</span>
+                                <span>玉兔</span>
+                                <span>森田药妆</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">健一热卖</a>
+                    <i class="iconfont icon-jiantouyou fr"></i>
+                    <div class="clearfix menu_3">
+                        <div class="fl menu3_left">
+                            <ul class="clearfix">
+                                <li>
+                                    <a href="#" class="first_li">测血糖</a>
+                                </li>
+                                <li>
+                                    <a href="#">血糖仪</a>
+                                </li>
+                                <li>
+                                    <a href="#">测试纸</a>
+                                </li>
+                                <li>
+                                    <a href="#">强生</a>
+                                </li>
+                            </ul>
+                            <ul class="clearfix">
+                                <li>
+                                    <a href="#" class="first_li">测血压</a>
+                                </li>
+                                <li>
+                                    <a href="#">腕式血压计</a>
+                                </li>
+                                <li>
+                                    <a href="#">手臂血压计</a>
+                                </li>
+                                <li>
+                                    <a href="#">九安</a>
+                                </li>
+                                <li>
+                                    <a href="#">善存</a>
+                                </li>
+                            </ul>
+                            <ul  class="clearfix">
+                                <li>
+                                    <a href="#" class="first_li">测血糖</a>
+                                </li>
+                                <li>
+                                    <a href="#">血糖仪</a>
+                                </li>
+                                <li>
+                                    <a href="#">测试纸</a>
+                                </li>
+                                <li>
+                                    <a href="#">强生</a>
+                                </li>
+                            </ul>
+                            <ul class="clearfix">
+                                <li>
+                                    <a href="#" class="first_li">测血压2</a>
+                                </li>
+                                <li>
+                                    <a href="#">腕式血压计</a>
+                                </li>
+                                <li>
+                                    <a href="#">手臂血压计</a>
+                                </li>
+                                <li>
+                                    <a href="#">九安</a>
+                                </li>
+                                <li>
+                                    <a href="#">善存</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="fr menu3_right">
+                            <h4>热门推荐</h4>
+                            <div>
+                                <span>罗门</span>
+                                <span>百川</span>
+                                <span>玉兔</span>
+                                <span>森田药妆</span>
+                                <span>罗门</span>
+                                <span>百川</span>
+                                <span>玉兔</span>
+                                <span>森田药妆</span>
+                                <span>罗门</span>
+                                <span>百川</span>
+                                <span>玉兔</span>
+                                <span>森田药妆</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">健一热卖</a>
+                    <i class="iconfont icon-jiantouyou fr"></i>
+                    <div class="clearfix menu_3">
+                        <div class="fl menu3_left">
+                            <ul class="clearfix">
+                                <li>
+                                    <a href="#" class="first_li">测血糖</a>
+                                </li>
+                                <li>
+                                    <a href="#">血糖仪</a>
+                                </li>
+                                <li>
+                                    <a href="#">测试纸</a>
+                                </li>
+                                <li>
+                                    <a href="#">强生</a>
+                                </li>
+                            </ul>
+                            <ul class="clearfix">
+                                <li>
+                                    <a href="#" class="first_li">测血压</a>
+                                </li>
+                                <li>
+                                    <a href="#">腕式血压计</a>
+                                </li>
+                                <li>
+                                    <a href="#">手臂血压计</a>
+                                </li>
+                                <li>
+                                    <a href="#">九安</a>
+                                </li>
+                                <li>
+                                    <a href="#">善存</a>
+                                </li>
+                            </ul>
+                            <ul  class="clearfix">
+                                <li>
+                                    <a href="#" class="first_li">测血糖</a>
+                                </li>
+                                <li>
+                                    <a href="#">血糖仪</a>
+                                </li>
+                                <li>
+                                    <a href="#">测试纸</a>
+                                </li>
+                                <li>
+                                    <a href="#">强生</a>
+                                </li>
+                            </ul>
+                            <ul class="clearfix">
+                                <li>
+                                    <a href="#" class="first_li">测血压3</a>
+                                </li>
+                                <li>
+                                    <a href="#">腕式血压计</a>
+                                </li>
+                                <li>
+                                    <a href="#">手臂血压计</a>
+                                </li>
+                                <li>
+                                    <a href="#">九安</a>
+                                </li>
+                                <li>
+                                    <a href="#">善存</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="fr menu3_right">
+                            <h4>热门推荐</h4>
+                            <div>
+                                <span>罗门</span>
+                                <span>百川</span>
+                                <span>玉兔</span>
+                                <span>森田药妆</span>
+                                <span>罗门</span>
+                                <span>百川</span>
+                                <span>玉兔</span>
+                                <span>森田药妆</span>
+                                <span>罗门</span>
+                                <span>百川</span>
+                                <span>玉兔</span>
+                                <span>森田药妆</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">健一热卖</a>
+                    <i class="iconfont icon-jiantouyou fr"></i>
+                    <div class="clearfix menu_3">
+                        <div class="fl menu3_left">
+                            <ul class="clearfix">
+                                <li>
+                                    <a href="#" class="first_li">测血糖</a>
+                                </li>
+                                <li>
+                                    <a href="#">血糖仪</a>
+                                </li>
+                                <li>
+                                    <a href="#">测试纸</a>
+                                </li>
+                                <li>
+                                    <a href="#">强生</a>
+                                </li>
+                            </ul>
+                            <ul class="clearfix">
+                                <li>
+                                    <a href="#" class="first_li">测血压</a>
+                                </li>
+                                <li>
+                                    <a href="#">腕式血压计</a>
+                                </li>
+                                <li>
+                                    <a href="#">手臂血压计</a>
+                                </li>
+                                <li>
+                                    <a href="#">九安</a>
+                                </li>
+                                <li>
+                                    <a href="#">善存</a>
+                                </li>
+                            </ul>
+                            <ul  class="clearfix">
+                                <li>
+                                    <a href="#" class="first_li">测血糖4</a>
+                                </li>
+                                <li>
+                                    <a href="#">血糖仪</a>
+                                </li>
+                                <li>
+                                    <a href="#">测试纸</a>
+                                </li>
+                                <li>
+                                    <a href="#">强生</a>
+                                </li>
+                            </ul>
+                            <ul class="clearfix">
+                                <li>
+                                    <a href="#" class="first_li">测血压</a>
+                                </li>
+                                <li>
+                                    <a href="#">腕式血压计</a>
+                                </li>
+                                <li>
+                                    <a href="#">手臂血压计</a>
+                                </li>
+                                <li>
+                                    <a href="#">九安</a>
+                                </li>
+                                <li>
+                                    <a href="#">善存</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="fr menu3_right">
+                            <h4>热门推荐</h4>
+                            <div>
+                                <span>罗门</span>
+                                <span>百川</span>
+                                <span>玉兔</span>
+                                <span>森田药妆</span>
+                                <span>罗门</span>
+                                <span>百川</span>
+                                <span>玉兔</span>
+                                <span>森田药妆</span>
+                                <span>罗门</span>
+                                <span>百川</span>
+                                <span>玉兔</span>
+                                <span>森田药妆</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">健一热卖</a>
+                    <i class="iconfont icon-jiantouyou fr"></i>
+                    <div class="clearfix menu_3">
+                        <div class="fl menu3_left">
+                            <ul class="clearfix">
+                                <li>
+                                    <a href="#" class="first_li">测血糖</a>
+                                </li>
+                                <li>
+                                    <a href="#">血糖仪</a>
+                                </li>
+                                <li>
+                                    <a href="#">测试纸</a>
+                                </li>
+                                <li>
+                                    <a href="#">强生</a>
+                                </li>
+                            </ul>
+                            <ul class="clearfix">
+                                <li>
+                                    <a href="#" class="first_li">测血压</a>
+                                </li>
+                                <li>
+                                    <a href="#">腕式血压计</a>
+                                </li>
+                                <li>
+                                    <a href="#">手臂血压计</a>
+                                </li>
+                                <li>
+                                    <a href="#">九安</a>
+                                </li>
+                                <li>
+                                    <a href="#">善存</a>
+                                </li>
+                            </ul>
+                            <ul  class="clearfix">
+                                <li>
+                                    <a href="#" class="first_li">测血糖</a>
+                                </li>
+                                <li>
+                                    <a href="#">血糖仪</a>
+                                </li>
+                                <li>
+                                    <a href="#">测试纸</a>
+                                </li>
+                                <li>
+                                    <a href="#">强生</a>
+                                </li>
+                            </ul>
+                            <ul class="clearfix">
+                                <li>
+                                    <a href="#" class="first_li">测血压</a>
+                                </li>
+                                <li>
+                                    <a href="#">腕式血压计</a>
+                                </li>
+                                <li>
+                                    <a href="#">手臂血压计</a>
+                                </li>
+                                <li>
+                                    <a href="#">九安</a>
+                                </li>
+                                <li>
+                                    <a href="#">善存</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="fr menu3_right">
+                            <h4>热门推荐</h4>
+                            <div>
+                                <span>罗门</span>
+                                <span>百川</span>
+                                <span>玉兔</span>
+                                <span>森田药妆</span>
+                                <span>罗门</span>
+                                <span>百川</span>
+                                <span>玉兔</span>
+                                <span>森田药妆</span>
+                                <span>罗门</span>
+                                <span>百川</span>
+                                <span>玉兔</span>
+                                <span>森田药妆</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">首页</a>
+        </li>
+        <li>
+            <a href="#">专科药品</a>
+        </li>
+        <li>
+            <a href="#">健一社区</a>
+        </li>
+        <li>
+            <a href="#">专科药品</a>
+        </li>
+        <li>
+            <a href="#">专科药品</a>
+        </li>
+    </ul>
+
+</nav>
+
+<!--内容-->
+<div id="main">
+    <div class="con clearfix main">
+        <h3 class="mainTop">
+            <a href="../index.html">健一首页</a>&gt;
+            <a href="../index.html">中药养生</a>&gt;
+            <a href="../index.html">菊花</a>&gt;
+            <a href="../index.html">菊晨 胎菊王(特级) 40g</a>
+        </h3>
+        <div class="fl mainLeft">
+            <div class="imgMsg">
+                <img src="../images/goodimg/01.jpg" alt="">
+            </div>
+            <div class="clearfix imgDetails">
+                <span class="fl"><i class="iconfont icon-jiantouzuo"></i></span>
+                <div>
+                    <img src="../images/goodimg/01.jpg" alt="">
+                </div>
+                <span class="fr"><i class="iconfont icon-jiantouyou"></i></span>
+
+            </div>
+            <p>
+                商品编号：<span>100834</span>
+            </p>
+        </div>
+
+        <div class="fl mainRight">
+            <h4>菊晨 胎菊王(特级) 40g</h4>
+            <p>新老包装随机发货</p>
+            <div class="price">
+                <p>价格：<span>￥<s>214</s></span></p>
+                <div>
+                    <span>手机下单更方便</span>
+                    <span class="sm">(扫码下单)</span>
+                    <div class="xiadan">
+                        <img src="../images/details/erweima.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <!--商品规格-->
+            <div class="guige">
+                <p>商品规格：<span>40g</span></p>
+                <p>生产商家：<span>桐乡市同福三星杭白菊制品厂</span></p>
+                <p>支   持：<span>在线支付满89元包邮  货到付款满150元包邮</span></p>
+            </div>
+            <!--选择规格-->
+            <div class="clearfix xzguige">
+                <span class="fl">选择规格：</span>
+                <ul class="fl">
+                    <li>
+                        <s></s>
+                        <span>胎菊王（特级）40g</span>
+                    </li>
+                    <li>
+                        <s></s>
+                        <span>胎菊王（特级）40g</span>
+                    </li>
+                    <li>
+                        <s></s>
+                        <span>胎菊王（特级）40g</span>
+                    </li>
+                </ul>
+
+            </div>
+            <!--数量-->
+            <div class="clearfix">
+                <div id="number" class="fl">
+                    <span>数&nbsp;&nbsp;量:</span>
+                    <p class="fr">
+                        <span class="btnJia">+</span>
+                        <span class="btnJian"> -</span>
+                    </p>
+                    <input type="text" id="goodNum">
+                </div>
+
+                <a href="#"  id="addCar" class="fl">
+                    <i class="iconfont icon-gouwuchekong"></i>
+                    加入购物车
+                </a>
+            </div>
+
+
+
+        </div>
+
+        <!--商品评价-->
+        <div class="fr haoping">
+            <h4>商品评价</h4>
+            <div>
+                <p>好评度 <span>96%</span></p>
+                <ul id="hpTiao">
+                    <li>
+                            <span>
+                                好评
+                            </span>
+                        <span class="haoP"></span>
+                    </li>
+                    <li>
+                            <span>
+                                中评
+                            </span>
+                        <span class="zhongP"></span>
+                    </li>
+                    <li>
+                            <span>
+                                差评
+                            </span>
+                        <span class="chaP"></span>
+                    </li>
+                    <li>
+
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--人气组合-->
+    <div class="con zuhe">
+        <ul class="clearfix zuheTit">
+            <li id="zh_tuijian">热门推荐</li>
+            <li id="zh_renqi">人气组合</li>
+        </ul>
+        <div class="zh_show">
+            <!--热门推荐-->
+            <ul class="tjGood">
+                <li>
+                    <img src="../images/goodimg/04.jpg" alt="">
+                    <p>胎菊 50g</p>
+                    <span>￥<s>29.00</s></span>
+                    <a href="#"><i class="iconfont icon-gouwuchekong"></i>加入购物车</a>
+                </li>
+                <li>
+                    <img src="../images/goodimg/02.jpg" alt="">
+                    <p>胎菊 50g</p>
+                    <span>￥<s>29.00</s></span>
+                    <a href="#"><i class="iconfont icon-gouwuchekong"></i>加入购物车</a>
+                </li>
+                <li>
+                    <img src="../images/goodimg/03.jpg" alt="">
+                    <p>胎菊 50g</p>
+                    <span>￥<s>29.00</s></span>
+                    <a href="#"><i class="iconfont icon-gouwuchekong"></i>加入购物车</a>
+                </li>
+            </ul>
+
+            <!--人气组合-->
+            <ul class="rqGood">
+                <li>
+                    <img src="../images/goodimg/01.jpg" alt="">
+                    <p>胎菊 50g</p>
+                    <span>￥<s>29.00</s></span>
+                </li>
+                <li>
+                    <img src="../images/goodimg/09.jpg" alt="">
+                    <p>铭德堂 铭徳堂 罗汉果 1只 罗汉果</p>
+                    <span>￥<s>9.00</s></span>
+                </li>
+                <li>
+                    <p>组合价：</p>
+                    <span class="fs20">￥<s>29.00</s></span>
+                    <a href="#"><i class="iconfont icon-gouwuchekong"></i>加入购物车</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--同类品牌-->
+    <div class="con clearfix SamePinpai">
+        <div class="fl sameLeft">
+            <h3>同类品牌</h3>
+            <div>
+                <a href="#">同仁堂</a>
+                <a href="#">忆江南</a>
+                <a href="#">哈哈</a>
+
+                <a href="#">同仁堂</a>
+                <a href="#">同仁是堂</a>
+                <a href="#">任务仁堂</a>
+                <a href="#">同仁堂</a>
+                <a href="#">本才车堂</a>
+                <a href="#">同仁堂</a>
+                <a href="#">同仁堂</a>
+                <a href="#">同堂</a>
+                <a href="#">仁堂</a>
+                <a href="#">同仁堂</a>
+                <a href="#">同仁堂</a>
+                <a href="#">同仁堂</a>
+                <a href="#">同仁堂</a>
+                <a href="#">仁堂</a>
+                <a href="#">同仁堂</a>
+                <a href="#">同仁堂仁</a>
+                <a href="#">同仁堂</a>
+                <a href="#">来来来</a>
+                <a href="#">同仁堂</a>
+                <a href="#">同仁堂</a>
+                <a href="#">同仁堂</a>
+                <a href="#">杨欣悦</a>
+                <a href="#">养音乐</a>
+                <a href="#">健一网</a>
+                <a href="#">姿美堂</a>
+                <a href="#">美滋滋</a>
+                <a href="#">傻狍子</a>
+            </div>
+            <p>
+                <img src="../images/listpage/mainLeft_01.jpg" alt="">
+                <img src="../images/listpage/mainLeft_02.jpg" alt="">
+                <img src="../images/listpage/mainLeft_03.jpg" alt="">
+                <img src="../images/listpage/mainLeft_04.jpg" alt="">
+                <img src="../images/listpage/mainLeft_05.jpg" alt="">
+                <img src="../images/listpage/mainLeft_06.jpg" alt="">
+                <img src="../images/listpage/mainLeft_07.jpg" alt="">
+            </p>
+
+        </div>
+        <div class="fr clearfix sameRight">
+            <div class="clearfix sR_top">
+                <ul class="fl clearfix">
+                    <li>商品信息</li>
+                    <li>说明书</li>
+                    <li>累计评价</li>
+                    <li>成交记录</li>
+                    <li>大家都在问</li>
+                </ul>
+                <a href="#" class="fr jiaGou">加入购物车</a>
+            </div>
+            <div class="sR_btm">
+                <div>
+                    <h6>
+                        商品品牌：<span>鞠晨</span>
+                    </h6>
+                    <div>
+                        <p>产品名称： 菊晨 胎菊王(特级) 40g</p>
+                        <p>商品类型：参茸饮片生产厂家：桐乡市同福三星杭白菊制品厂</p>
+                        <p>温馨提示：部分商品包装更换频繁，如货品与图片 不完全一致，请以收到的商品实物为准，本商城确保商品为原厂正品。</p>
+                    </div>
+                </div>
+                <p>
+                    <img src="../images/details/adv_01.jpg" alt="">
+                    <img src="../images/details/adv_02.jpg" alt="">
+                    <img src="../images/details/adv_03.jpg" alt="">
+                    <img src="../images/details/adv_04.jpg" alt="">
+                    <img src="../images/details/adv_05.jpg" alt="">
+                    <img src="../images/details/adv_06.jpg" alt="">
+                    <img src="../images/details/adv_07.jpg" alt="">
+                    <img src="../images/details/adv_08.jpg" alt="">
+                    <img src="../images/details/adv_09.jpg" alt="">
+                    <img src="../images/details/adv_10.jpg" alt="">
+                </p>
+
+            </div>
+            <div class="clearfix sR_top">
+                <ul class="fl clearfix">
+                    <li>全部评价</li>
+                    <li>好评</li>
+                    <li>中评</li>
+                    <li>差评</li>
+                </ul>
+                <a href="#" class="fr jiaGou">我要评价</a>
+            </div>
+
+            <!--这里是评价信息-->
+            <div class="comment">
+                <ul class="commentList">
+                    <li>
+                        <img class="fl" src="../images/details/%5Btouxiang.png" alt="">
+                        <div class="fl">
+                                <span class="star">
+                                    <i>
+                                        <!--背景图片是星星-->
+                                    </i>
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+                                </span>
+                            <span>非常满意</span>
+                            <p class="pj_conent">
+                                还可以的非常好，健一网还是不错的，足不出户，价格还比实体店优惠。最主要想买什么种类都比较齐全。常备药选健一！
+                            </p>
+                        </div>
+                        <p id="show_name">
+                            <span class="show_name">(隐身用户)</span>
+                        </p>
+                    </li>
+                    <li>
+                        <img class="fl" src="../images/details/%5Btouxiang.png" alt="">
+                        <div class="fl">
+                                <span class="star">
+                                    <i>
+                                        <!--背景图片是星星-->
+                                    </i>
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+                                </span>
+                            <span>非常满意</span>
+                            <p class="pj_conent">
+                                还可以的非常好，健一网还是不错的，足不出户，价格还比实体店优惠。最主要想买什么种类都比较齐全。常备药选健一！
+                            </p>
+                        </div>
+                        <p id="show_name">
+                            <span class="show_name">(隐身用户)</span>
+                        </p>
+                    </li>
+                </ul>
+                <div class="clearfix setPage">
+                    <span>共 <s>224</s> 条</span>
+                    <a href="#">首页</a>
+                    <a href="#">上一页</a>
+                    <div class="page"></div>
+                    <a href="#">下一页</a>
+                    <a href="#">末页</a>
+                    <form action="">
+                        第 <input type="number">页
+                        <input type="button" value="确定">
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div><!--内容结束-->
+
+<!--站内导航-->
+<div class="con znNav">
+    <h3 class="btmTit">站内导航</h3>
+    <p>
+        <a href="#">三金片</a>
+        <a href="#">三金片</a>
+        <a href="#">三金片</a>
+        <a href="#">三金片</a>
+        <a href="#">三金片</a>
+        <a href="#">三金片</a>
+        <a href="#">三金片</a>
+        <a href="#">三金片</a>
+        <a href="#">三金片</a>
+        <a href="#">三金片</a>
+        <a href="#">三金片</a>
+        <a href="#">三金片</a>
+        <a href="#">三金片</a>
+        <a href="#">三金片</a>
+        <a href="#">三金片</a>
+        <a href="#">三金片</a>
+        <a href="#">三金片</a>
+        <a href="#">三金片</a>
+        <a href="#">三金片</a>
+        <a href="#">三金片</a>
+        <a href="#">三金片</a>
+        <a href="#">三金片</a>
+        <a href="#">三金片</a>
+        <a href="#">三金片</a>
+        <a href="#">三金片</a>
+        <a href="#">三金片</a>
+        <a href="#">三金片</a>
+        <a href="#">三金片</a>
+    </p>
+</div>
+
+<!--热门推荐-->
+<div class="con reMen">
+    <h3 class="btmTit">热门推荐</h3>
+    <!--轮播热门-->
+    <ul>
+        <li>
+            <img src="../images/btmHot_02.jpg" alt="">
+            <a href="#">东郊阿娇 铁盒 袋装</a>
+        </li>
+        <li>
+            <img src="../images/btmHot_03.jpg" alt="">
+            <a href="#">东郊阿娇 铁盒 袋装</a>
+        </li>
+        <li>
+            <img src="../images/btmHot_04.jpg" alt="">
+            <a href="#">东郊阿娇 铁盒 袋装</a>
+        </li>
+        <li>
+            <img src="../images/btmHot_05.jpg" alt="">
+            <a href="#">东郊阿娇 铁盒 袋装</a>
+        </li>
+        <li>
+            <img src="../images/btmHot_06.jpg" alt="">
+            <a href="#">东郊阿娇 铁盒 袋装</a>
+        </li>
+        <li>
+            <img src="../images/btmHot_07.jpg" alt="">
+            <a href="#">东郊阿娇 铁盒 袋装</a>
+        </li>
+        <li>
+            <img src="../images/btmHot_08.jpg" alt="">
+            <a href="#">东郊阿娇 铁盒 袋装</a>
+        </li>
+        <li>
+            <img src="../images/btmHot_09.jpg" alt="">
+            <a href="#">东郊阿娇 铁盒 袋装</a>
+        </li>
+        <li>
+            <img src="../images/btmHot_10.jpg" alt="">
+            <a href="#">东郊阿娇 铁盒 袋装</a>
+        </li>
+        <li>
+            <img src="../images/btmHot_02.jpg" alt="">
+            <a href="#">东郊阿娇 铁盒 袋装</a>
+        </li>
+
+    </ul>
+</div>
+
+
+
+<!--底部链接信息-->
+<div id="btmLink">
+    <div class="con btmLink">
+        <div class="linktop">
+            <p>
+                <span>友情链接 ：</span>
+                <a href="#">优乐甲</a>
+                <a href="#">菜瓢谷养生网</a>
+                <a href="#">中华中医网</a>
+                <a href="#">养生</a>
+                <a href="#">39药品通</a>
+                <a href="#">飞华健康网</a>
+                <a href="#">药房网</a>
+                <a href="#">问医生</a>
+                <a href="#">疾病库</a>
+                <a href="#">健一医生</a>
+                <a href="#">药房网商城</a>
+                <a href="#">中华康网</a>
+                <a href="#">网上药店</a>
+                <a href="#">健一网</a>
+                <a href="#">网上药店</a>
+                <a href="#">铁骨网</a>
+                <a href="#">网上药店</a>
+                <a href="#">八百方网上药店</a>
+                <a href="#">恩替卡韦分散片</a>
+            </p>
+            <p>
+                <span>战略同盟 ：</span>
+                <a href="#">寻医问药</a>
+            </p>
+            <p>
+                <span>政府机构 ：</span>
+                <a href="#">国家卫生部</a>
+            </p>
+        </div>
+        <div class="linkmid">
+            <img src="../images/btmLink_01.png" alt="">
+        </div>
+        <div class="linkbtm">
+            <img src="../images/btmLink_02.png" alt="">
+        </div>
+        <p>Copyright © j1.com All rights reserved 沪ICP备09007253号 沪公网安备 31010402000326号上海健一网大药房连锁经营有限公司</p>
+    </div>
+</div>
+
+<!--固定地位-->
+<div class="Online_Consulting">
+    <img src="../images/swt_01.png" alt="" id="img1">
+    <img src="../images/smwx.png" alt="" id="img2">
+    <p class="p1">
+        <img src="../images/sw_02.png" alt="">
+    </p>
+    <p class="p2">
+        <img src="../images/smwx_01.jpg" alt="">
+    </p>
+</div>
+
+</body>
+<script src="../js/jquery-3.2.1.js"></script>
+<script src="../lib/jquery-Carousel/jquery-Carousel.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/details.js"></script>
+</html>

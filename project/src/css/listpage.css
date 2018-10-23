@@ -362,27 +362,6 @@
   margin: 8px 5px;
 }
 
-.reMen {
-  border: 1px solid #dddddd;
-}
-
-.reMen ul {
-  height: 218px;
-  border: 1px solid #dddddd;
-  border-top: 0 none;
-}
-
-.reMen ul li {
-  float: left;
-  width: 200px;
-  font-size: 12px;
-  padding: 17px 0 0 32px;
-}
-
-.reMen ul li img {
-  width: 80px;
-}
-
 h3.btmTit {
   padding-left: 40px;
   font-size: 20px;

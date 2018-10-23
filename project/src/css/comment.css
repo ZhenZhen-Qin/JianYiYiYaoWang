@@ -1,0 +1,104 @@
+.comment {
+  min-height: 700px;
+}
+
+.comment h3 {
+  width: 973px;
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 3px solid #C40000;
+}
+
+.comment h3 span {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 20px;
+}
+
+.comment h3 span s {
+  color: #C40000;
+}
+
+.comment ul.myGoods {
+  min-height: 127px;
+  padding: 10px;
+  border-top: 1px solid #dddddd;
+}
+
+.comment ul.myGoods li {
+  height: 127px;
+  background: #FFF4E8;
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+.comment ul.myGoods li img {
+  width: 100px;
+  border: 1px solid #dddddd;
+  margin: 10px;
+}
+
+.comment ul.myGoods li span, .comment ul.myGoods li p {
+  display: inline-block;
+  text-align: center;
+}
+
+.comment ul.myGoods li .uname {
+  width: 278px;
+}
+
+.comment ul.myGoods li > span {
+  width: 135px;
+}
+
+.comment ul.myGoods li > span input {
+  width: 28px;
+  height: 20px;
+  border: 1px solid #dddddd;
+}
+
+.comment ul.myGoods li > p a {
+  display: inline-block;
+  padding: 3px 20px;
+  margin-left: 30px;
+  border: 1px solid #dddddd;
+  background: #F1F1F1;
+}
+
+.comment form#pingjia {
+  padding-left: 10px;
+}
+
+.comment form#pingjia h3 {
+  font-size: 30px;
+  color: #3A3D3E;
+}
+
+.comment form#pingjia > p {
+  margin: 5px 10px;
+}
+
+.comment form#pingjia > div textarea {
+  width: 700px;
+  height: 200px;
+}
+
+.comment form#pingjia > div > p {
+  padding-right: 300px;
+}
+
+.comment form#pingjia > div > p span {
+  color: #58bc58;
+}
+
+.comment form#pingjia > input#subBtn {
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  margin: 30px 10px;
+  background: #C40000;
+  color: #F1F1F1;
+}

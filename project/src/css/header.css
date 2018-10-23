@@ -406,3 +406,55 @@ a:hover {
   width: 116px;
   height: 139px;
 }
+
+.znNav {
+  border: 1px solid #dddddd;
+  font-size: 12px;
+  margin: 30px auto;
+}
+
+.znNav h3.btmTit {
+  padding-left: 40px;
+  font-size: 20px;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #dddddd;
+}
+
+.znNav p {
+  padding: 20px;
+}
+
+.znNav p a {
+  display: inline-block;
+  margin: 8px 5px;
+}
+
+.reMen {
+  border: 1px solid #dddddd;
+}
+
+.reMen h3.btmTit {
+  padding-left: 40px;
+  font-size: 20px;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #dddddd;
+}
+
+.reMen ul {
+  height: 218px;
+  border: 1px solid #dddddd;
+  border-top: 0 none;
+}
+
+.reMen ul li {
+  float: left;
+  width: 200px;
+  font-size: 12px;
+  padding: 17px 0 0 32px;
+}
+
+.reMen ul li img {
+  width: 80px;
+}
