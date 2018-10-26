@@ -5,6 +5,7 @@ function getRandomNum(min,max){
     var ranNum = parseInt(Math.random()*(max-min+1) +min);
     return ranNum;
 }
+
 // 2.封装随机颜色 rgb(0-255,0-255,0-255)
 function getRandomColor(){
     var r = getRandomNum(0,255);
@@ -242,20 +243,35 @@ function removeEmptyArrayEle(arr){
 }
 
 
-//固定定位
-$(".Online_Consulting")[0].style.left = document.body.clientWidth-38 +"px";
-$(".Online_Consulting .p1").hide();
-$(".Online_Consulting #img1").on("mouseenter",function () {
-    $(".Online_Consulting .p1").show(500);
-});
-$(".Online_Consulting #img1").on("mouseleave",function () {
-    $(".Online_Consulting .p1").hide(100);
-});
+// 固定定位
+// $(".Online_Consulting")[0].style.left = document.body.clientWidth-38 +"px";
+// $(".Online_Consulting .p1").hide();
+// $(".Online_Consulting #img1").on("mouseenter",function () {
+//     $(".Online_Consulting .p1").show(500);
+// });
+// $(".Online_Consulting #img1").on("mouseleave",function () {
+//     $(".Online_Consulting .p1").hide(100);
+// });
+//
+// $(".Online_Consulting .p2").hide();
+// $(".Online_Consulting #img2").on("mouseenter",function () {
+//     $(".Online_Consulting .p2").show(500);
+// });
+// $(".Online_Consulting #img2").on("mouseleave",function () {
+//     $(".Online_Consulting .p2").hide(100);
+// });
 
-$(".Online_Consulting .p2").hide();
-$(".Online_Consulting #img2").on("mouseenter",function () {
-    $(".Online_Consulting .p2").show(500);
-});
-$(".Online_Consulting #img2").on("mouseleave",function () {
-    $(".Online_Consulting .p2").hide(100);
-});
+
+
+//生成验证码
+function setCheckMa(num){
+    var arr = ["q","w","e","r","t","y","u","i","o","p","a","s","d","f","g","h","j","k","l","z","x","c","v","b","n","m",
+        "1","2","3","4","5","6","7","8","9","0"];
+
+    var str = "";
+    for(var i=0;i<num;i++){
+        var idx = getRandomNum(0,arr.length-1);
+        str += arr[idx];
+    }
+    return str;
+}

@@ -74,6 +74,7 @@ header a {
   border-top: 1px solid #dddddd;
   border-bottom: 1px solid #dddddd;
   font-size: 12px;
+  padding-left: 10px;
 }
 
 #shopcar .shopcar .carContent ul.myGoods li img {
@@ -88,17 +89,18 @@ header a {
 }
 
 #shopcar .shopcar .carContent ul.myGoods li .uname {
-  width: 278px;
+  width: 250px;
 }
 
 #shopcar .shopcar .carContent ul.myGoods li > span {
   width: 75px;
 }
 
-#shopcar .shopcar .carContent ul.myGoods li > span input {
-  width: 28px;
+#shopcar .shopcar .carContent ul.myGoods li > span input.goodNum {
+  width: 18px;
   height: 20px;
   border: 1px solid #dddddd;
+  padding-left: 5px;
 }
 
 #shopcar .shopcar .carContent ul.myGoods li > span s {
@@ -110,8 +112,24 @@ header a {
   border: 1px solid #dddddd;
 }
 
+#shopcar .shopcar .carContent ul.myGoods li span.tatolPrice {
+  font-size: 14px;
+  color: #c40000;
+}
+
 #shopcar .shopcar .carContent ul.myGoods li > p > span {
   margin-right: 3px;
+}
+
+#shopcar .shopcar .carContent ul.myGoods li#qingkong {
+  line-height: 127px;
+  font-size: 30px;
+  text-align: center;
+  color: #404040;
+}
+
+#shopcar .shopcar .carContent ul.myGoods li#qingkong i {
+  font-size: 30px;
 }
 
 #shopcar .shopcar .quanxuan {
@@ -138,6 +156,8 @@ header a {
 
 #shopcar .shopcar .quanxuan p:nth-child(2) span s {
   color: #C40000;
+  font-size: 16px;
+  margin: 0 10px;
 }
 
 #shopcar .shopcar .quanxuan p:nth-child(2) span:nth-child(2) s {

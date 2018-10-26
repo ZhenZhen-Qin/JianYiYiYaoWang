@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="lib/jquery-Carousel/jquery-Carousel.css">
     <link rel="stylesheet" href="css/index.css">
 
-
 </head>
 <body>
     <header id="header">
@@ -22,18 +21,18 @@
                     <span>收藏健一医药网</span>
                     <span>设为首页</span>
                 </p>
-                <ul class="clearfix fr">
+                <ul class="clearfix fr" id="denglu">
                     <li>
                         您好！欢迎来到健一网网上药店
                     </li>
-                    <li class="denglu">
-                        [<a href="#">登录</a>]
+                    <li class="denglu d1">
+                        [<a href="html/login.html">登录</a>]
                     </li>
-                    <li class="denglu">
-                        [<a href="#">注册</a>]
+                    <li class="denglu d2">
+                        [<a href="html/register.html">注册</a>]
                     </li>
                     <li>
-                        <a href="#">我的订单</a>
+                        <a href="html/shopCar.html">我的订单</a>
                     </li>
                     <li>
                         <a href="#">网站导航</a>
@@ -87,7 +86,7 @@
                     </div>
 
                     <div class="shopCar">
-                        <a href="#">
+                        <a href="html/shopCar.html">
                             <i class="iconfont icon-gouwuchekong"></i>
                             购物车
                             <i class="iconfont icon-jiantouyou"></i>
@@ -565,19 +564,19 @@
                 </ul>
             </li>
             <li>
-                <a href="#">首页</a>
+                <a href="javascript:void(null)" class="aBiao">首页</a>
             </li>
             <li>
-                <a href="#">专科药品</a>
+                <a href="#" class="aBiao">专科药品</a>
             </li>
             <li>
-                <a href="#">专科药品</a>
+                <a href="#" class="aBiao">专科药品</a>
             </li>
             <li>
-                <a href="#">专科药品</a>
+                <a href="#" class="aBiao">专科药品</a>
             </li>
             <li>
-                 <a href="#">专科药品</a>
+                 <a href="#" class="aBiao">专科药品</a>
             </li>
         </ul>
 
@@ -593,6 +592,15 @@
                 <span class="span2">
                     <i class="iconfont icon-jiantouyou"></i>
                 </span>
+
+                <!--<ul>-->
+                    <!--<li><img src="images/banner.jpg" alt=""></li>-->
+                    <!--<li><img src="images/banner1.jpg" alt=""></li>-->
+                    <!--<li><img src="images/banner2.jpg" alt=""></li>-->
+                    <!--<li><img src="images/banner3.jpg" alt=""></li>-->
+                    <!--<li><img src="images/banner4.jpg" alt=""></li>-->
+                    <!--<li><img src="images/banner5.jpg" alt=""></li>-->
+                <!--</ul>-->
             </div>
             <div class="fr banner_right">
                 <div class="banner_right_page"></div>
@@ -687,42 +695,27 @@
         <div class="hot fl">
             <div class="clearfix hot_title">
                 <h3 class="fl">热门推荐</h3>
-                <ul class="fl">
-                    <li class="lihover">促销活动</li>
-                    <li>热销排行</li>
-                    <li>猜您喜欢</li>
+                <ul class="fl ht_li">
+                    <!--li   class="lihover"-->
+                    <li date-idx="1">促销活动</li>
+                    <li date-idx="2">热销排行</li>
+                    <li date-idx="3">猜您喜欢</li>
                 </ul>
             </div>
-            <ul class="hot_content">
-                <li>
-                    <img src="images/hot_01.jpg" alt="">
-                    <a class="hotlist_name">东阿阿胶铁盒阿胶块500克 第2件5折</a>
-                    <p class="hotlist_price">
-                        秋季上新价：<span>2998</span>元
-                    </p>
-                </li>
-                <li>
-                    <img src="images/hot_01.jpg" alt="">
-                    <a class="hotlist_name">东阿阿胶铁盒阿胶块500克 第2件5折</a>
-                    <p class="hotlist_price">
-                        秋季上新价：<span>2998</span>元
-                    </p>
-                </li>
-                <li>
-                    <img src="images/hot_01.jpg" alt="">
-                    <a class="hotlist_name">东阿阿胶铁盒阿胶块500克 第2件5折</a>
-                    <p class="hotlist_price">
-                        秋季上新价：<span>2998</span>元
-                    </p>
-                </li>
-                <li>
-                    <img src="images/hot_01.jpg" alt="">
-                    <a class="hotlist_name">东阿阿胶铁盒阿胶块500克 第2件5折</a>
-                    <p class="hotlist_price">
-                        秋季上新价：<span>2998</span>元
-                    </p>
-                </li>
-            </ul>
+            <div id="good_hot">
+                <ul date-idx="1" class="hot_content">
+                    <!--<li>-->
+                    <!--<img src="images/hot_01.jpg" alt="">-->
+                    <!--<a class="hotlist_name">东阿阿胶铁盒阿胶块500克 第2件5折</a>-->
+                    <!--<p class="hotlist_price">-->
+                    <!--秋季上新价：<span>2998</span>元-->
+                    <!--</p>-->
+                    <!--</li>-->
+                </ul>
+                <ul date-idx="2" class="hot_content"></ul>
+                <ul date-idx="3" class="hot_content"></ul>
+            </div>
+
         </div>
         <!--adv-->
         <div class="fr adv">

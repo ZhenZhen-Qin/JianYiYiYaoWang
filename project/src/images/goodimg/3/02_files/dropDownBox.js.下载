@@ -1,0 +1,101 @@
+function focusPhoneNum(){
+	var inputValue = jQuery.trim($("#phoneDropDownBox").val());
+	if(inputValue == "输入手机号"){
+		$("#phoneDropDownBox").val('');
+		return false;
+	}
+}
+
+function blurPhoneNum(){
+	var inputValue2 = jQuery.trim($("#phoneDropDownBox").val());
+	if(inputValue2 == ""){
+		$("#phoneDropDownBox").val('输入手机号');
+		return false;
+	}
+}
+
+function focusYZMDropDownBox(){
+	var keywordValue= jQuery.trim($("#yzmDropDownBox").val());
+	if(keywordValue == "验证码"){
+		$("#yzmDropDownBox").val('');
+		return false;
+	}
+}
+
+function blurYZMDropDownBox(){
+	var keywordValue2= jQuery.trim($("#yzmDropDownBox").val());
+	if(keywordValue2 == ""){
+		$("#yzmDropDownBox").val('验证码');
+		return false;
+	}
+}
+function getDownLoadURL(){
+	var isSure="N";
+	var inputValue1 = jQuery.trim($("#phoneDropDownBox").val());
+	if(inputValue1 == ""){
+		$("#errmsgDropDownBox").addClass('sj-error');
+		$("#errmsgDropDownBox").text('请输入手机号！');
+		return false;
+	}
+	var mobileDropDownBoxReg=/^(13|15|18|14|17|19|16)[0-9]{9}$/;
+	if(!mobileDropDownBoxReg.test(inputValue1)){
+		$("#errmsgDropDownBox").addClass('sj-error');
+		$("#errmsgDropDownBox").text('请输入正确的手机格式！');
+		return false;
+	}
+	var keyValue = jQuery.trim($("#yzmDropDownBox").val());
+	if(keyValue == ""){
+		$("#errmsgDropDownBox").addClass('sj-error');
+		$("#errmsgDropDownBox").text('请输入验证码！');
+		return false;
+	}
+	var url =appPath+"/valacode.html";
+	$.ajax({
+		url:url,
+	    data:{"ptYmValue":keyValue},
+	    type:"post",
+	    async:false,
+	    success: function(data) {
+	    	isSure=data;
+	    },
+	    error : function(responseText,error) {
+	    	//alert(error);
+	    	showError("系统错误，请稍候再试！");
+	    }
+	});
+	if(isSure!="Y"){
+		$("#errmsgDropDownBox").addClass('sj-error');
+		$("#errmsgDropDownBox").text('验证码输入错误！');
+		return false;
+	}
+	sendURL(inputValue1,keyValue);
+}
+
+/**
+ * 发送连接至手机
+ */
+function sendURL(paramInputValue1,paramKeyValue){
+	$.ajax({
+		url:appPath+"/sendURL.html",
+		type:"POST",
+		data:{
+			phoneNum:paramInputValue1,
+			code:paramKeyValue
+		},
+		success:function(data){
+			$("#errmsgDropDownBox").addClass('sj-error');
+			$("#errmsgDropDownBox").text(data);
+		}
+	});
+}
+
+
+/**
+ * 刷新验证码
+ */
+function SwitchKeyword() {
+	//debugger
+	$("#keywordValue").attr("src",
+			appPath + "/system/keyword.html?" + Math.random() + 100);
+}
+

@@ -26,7 +26,7 @@ body h1.con1 span s {
 }
 
 body div.login {
-  height: 484px;
+  height: 538px;
   box-sizing: border-box;
   background: #FFFFFF;
   border: 5px solid #F0F0F0;
@@ -76,7 +76,10 @@ body div.login form input#YanZM {
 
 body div.login form span.setYzm {
   display: inline-block;
-  padding: 3px 7px;
+  width: 70px;
+  height: 42px;
+  line-height: 40px;
+  text-align: center;
   background: #e2e2e2;
 }
 
@@ -110,4 +113,8 @@ footer.foot p {
   text-align: center;
   line-height: 20px;
   color: #706665;
+}
+
+#tel, #setPwd, #conPwd {
+  font-size: 14px;
 }

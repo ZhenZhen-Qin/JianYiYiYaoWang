@@ -1,0 +1,31 @@
+.commentDiv{width: 770px;height: 120px;margin-bottom: 5px;display: inline;border-bottom: 1px dashed gray;}
+.productImgDiv{width: 70px;height: 85px;float: left;margin-right:30px;display: inline;}
+.productImgDiv img{width: 68px;height: 68px;}
+.imgDivComment{width: 68px;height: 68px;border: 1px solid gray;}
+.productImgDiv table{width: 70px;height: 85px;}
+.cLeft{float: left;}
+.cRight{float: right;}
+
+.commentContentDiv{width: 650px;height: 120px;float: left;}
+.commentContentDiv table{width: 650px;height: 120px;}
+.commentTitleTd{background-color:#F8FBFF;font-weight: bold;font-size: 15px;float: left;width: 650px;}
+.commentTitleFont{color: #FF9700;font-weight: bold;}
+.rightDiv{float: right;font-size: 13px;font-weight: normal;}
+
+.messageDiv{width: 770px;height: 300px;float: left;}
+.message{width: 650px;margin-left: 60px;height: 300px;float: left;display: inline;border: 1px solid gray;}
+.messageTitle{width: 650px;height: 30px;font-weight: bold;font-size: 16px;background-color:#09C;color: #ffffff;line-height: 30px;float: left;display: inline;}
+.messageBody{width: 650px;height: 230px;float: left;}
+.messageBody table{width: 630px;height: 230px;float: left;margin-left: 20px;font-size: 14px;}
+
+.commentDetail{width: 770px;}
+
+.commentTd{width: 80px;text-align: right;color: #FF9700;font-weight: bold;height: 20px;}
+.replyDiv{border: 1px solid #FF9700;background-color: #FFFFE6;width: 620px;float: left;margin-bottom:5px;display: inline;margin-left: 10px;display: inline;font-size: 12px;}
+.replyContextDiv{float: left;margin: 10px;}
+.replyTitle{height: 25px;line-height: 25px;}
+
+.commentDetailTitle{float: left;width: 770px;}
+.commentDetailContent{float: left;width: 770px;}
+.titleFont{font-weight: bold;color:gray;font-size: 14px;}
+.commentDetailContent{float: left;}

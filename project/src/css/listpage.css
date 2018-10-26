@@ -284,13 +284,32 @@
   font-size: 14px;
 }
 
+#main .mainRight #goodlist .setPage .goodLen {
+  font-size: 20px;
+  margin: 0px 5px;
+}
+
 #main .mainRight #goodlist .setPage a, #main .mainRight #goodlist .setPage div, #main .mainRight #goodlist .setPage form {
   display: inline-block;
 }
 
-#main .mainRight #goodlist .setPage > a {
+#main .mainRight #goodlist .setPage > s {
   padding: 2px 3px;
   border: 1px solid #dddddd;
+}
+
+#main .mainRight #goodlist .setPage div.page > span {
+  display: inline-block;
+  padding: 2px 5px;
+  margin: 0 5px;
+  border: 1px solid #dddddd;
+}
+
+#main .mainRight #goodlist .setPage div.page .pageAct {
+  color: #FFFFFF;
+  border: 1px solid #C40002;
+  background: #c40000;
+  font-weight: bold;
 }
 
 #main .mainRight #goodlist .setPage form input:nth-child(1) {

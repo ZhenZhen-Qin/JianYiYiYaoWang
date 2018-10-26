@@ -39,6 +39,16 @@ body div.login form h3 {
   font-size: 20px;
 }
 
+body div.login form > p.regit {
+  font-size: 12px;
+  float: right;
+  margin-right: 100px;
+}
+
+body div.login form > p.regit > a {
+  color: #4183c4;
+}
+
 body div.login form label {
   display: block;
   color: #46495C;
@@ -51,11 +61,11 @@ body div.login form > input {
   margin: 20px 0;
 }
 
-body div.login form > p {
+body div.login form > p.p2 {
   font-size: 12px;
 }
 
-body div.login form > p a {
+body div.login form > p.p2 > a {
   margin-left: 178px;
   color: #706665;
 }

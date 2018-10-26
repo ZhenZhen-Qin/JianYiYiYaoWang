@@ -1,0 +1,10 @@
+
+// ga 统计去购物车结算链接点击次数
+function link_goto_settlement_head() {
+    _behavior_tracker('LINK_GOTO_SETTLEMENT_HEAD', 'LGS');
+}
+
+// 顶部悬浮层去结算按钮
+function btn_goto_settlement_head() {
+    _behavior_tracker('BTN_GOTO_SETTLEMENT_HEAD', 'BGH');
+}

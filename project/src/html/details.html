@@ -5,6 +5,7 @@
     <title>详情页</title>
     <link rel="stylesheet" href="../css/base_px.css">
     <link rel="stylesheet" href="../fonts/iconfont.css">
+    <link rel="stylesheet" href="../lib/magiczoom/magiczoom.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/details.css">
 </head>
@@ -17,21 +18,21 @@
                     <span>收藏健一医药网</span>
                     <span>设为首页</span>
                 </p>
-                <ul class="clearfix fr">
+                <ul class="clearfix fr" id="denglu">
                     <li>
                         您好！欢迎来到健一网网上药店
                     </li>
-                    <li class="denglu">
-                        [<a href="#">登录</a>]
+                    <li class="denglu d1">
+                        [<a href="login.html">登录</a>]
                     </li>
-                    <li class="denglu">
-                        [<a href="#">注册</a>]
-                    </li>
-                    <li>
-                        <a href="#">我的订单</a>
+                    <li class="denglu d2">
+                        [<a href="register.html">注册</a>]
                     </li>
                     <li>
-                        <a href="#">网站导航</a>
+                        <a href="shopCar.html">我的订单</a>
+                    </li>
+                    <li>
+                        <a href="../index.html">网站导航</a>
                     </li>
                     <li>
                         <a href="#">
@@ -589,26 +590,32 @@
             </h3>
             <div class="fl mainLeft">
                 <div class="imgMsg">
-                    <img src="../images/goodimg/01.jpg" alt="">
+                    <img class="Imgurl bigImg" src="../images/goodimg/01.jpg" alt="">
                 </div>
+                <!--<div class="imgMsg jqzoom">-->
+                    <!--<img src="../images/goodimg/00.jpg" class="Imgurl bigImg fs" alt="" jqimg="../images/goodimg/00.jpg" id="bigImg" />-->
+                <!--</div>-->
+
                 <div class="clearfix imgDetails">
                     <span class="fl"><i class="iconfont icon-jiantouzuo"></i></span>
-                    <div>
-                        <img src="../images/goodimg/01.jpg" alt="">
+                    <div id="xxTupian">
+                        <img class="Imgurl" src="../images/goodimg/01.jpg" alt="">
+                        <img class="Imgurl" src="../images/goodimg/01.jpg" alt="">
+                        <img class="Imgurl" src="../images/goodimg/01.jpg" alt="">
                     </div>
                     <span class="fr"><i class="iconfont icon-jiantouyou"></i></span>
 
                 </div>
                 <p>
-                    商品编号：<span>100834</span>
+                    商品编号：<span class="Gid">100834</span>
                 </p>
             </div>
 
             <div class="fl mainRight">
-                <h4>菊晨 胎菊王(特级) 40g</h4>
+                <h4 class="Gname">菊晨 胎菊王(特级) 40g</h4>
                 <p>新老包装随机发货</p>
                 <div class="price">
-                    <p>价格：<span>￥<s>214</s></span></p>
+                    <p>价格：<span>￥<s class="Price">214</s></span></p>
                     <div>
                         <span>手机下单更方便</span>
                         <span class="sm">(扫码下单)</span>
@@ -619,24 +626,25 @@
                 </div>
                 <!--商品规格-->
                 <div class="guige">
-                    <p>商品规格：<span>40g</span></p>
-                    <p>生产商家：<span>桐乡市同福三星杭白菊制品厂</span></p>
+                    <p>商品规格：<span class="Guige">40g</span></p>
+                    <p>生产商家：<span class="Manufactor">桐乡市同福三星杭白菊制品厂</span></p>
                     <p>支   持：<span>在线支付满89元包邮  货到付款满150元包邮</span></p>
                 </div>
                 <!--选择规格-->
                 <div class="clearfix xzguige">
                     <span class="fl">选择规格：</span>
-                    <ul class="fl">
+                    <ul class="fl smortImg">
                         <li>
-                            <s></s>
+                            <img src="../images/goodimg/01.jpg"></img>
+                            <span>胎菊王（特级）40g</span>
+                            <!--<i></i>-->
+                        </li>
+                        <li>
+                            <img src="../images/goodimg/01.jpg"></img>
                             <span>胎菊王（特级）40g</span>
                         </li>
                         <li>
-                            <s></s>
-                            <span>胎菊王（特级）40g</span>
-                        </li>
-                        <li>
-                            <s></s>
+                            <img src="../images/goodimg/01.jpg"></img>
                             <span>胎菊王（特级）40g</span>
                         </li>
                     </ul>
@@ -650,7 +658,7 @@
                             <span class="btnJia">+</span>
                             <span class="btnJian"> -</span>
                         </p>
-                        <input type="text" id="goodNum">
+                        <input type="text" id="goodNum" min=0 value="1">
                     </div>
 
                     <a href="#"  id="addCar" class="fl">
@@ -715,13 +723,13 @@
                     </li>
                     <li>
                         <img src="../images/goodimg/02.jpg" alt="">
-                        <p>胎菊 50g</p>
+                        <p>胎菊 *150g</p>
                         <span>￥<s>29.00</s></span>
                         <a href="#"><i class="iconfont icon-gouwuchekong"></i>加入购物车</a>
                     </li>
                     <li>
                         <img src="../images/goodimg/03.jpg" alt="">
-                        <p>胎菊 50g</p>
+                        <p>胎菊 350g</p>
                         <span>￥<s>29.00</s></span>
                         <a href="#"><i class="iconfont icon-gouwuchekong"></i>加入购物车</a>
                     </li>
@@ -1051,6 +1059,7 @@
 </body>
 <script src="../js/jquery-3.2.1.js"></script>
 <script src="../lib/jquery-Carousel/jquery-Carousel.js"></script>
+<script src="../lib/magiczoom/magiczoom.js"></script>
 <script src="../js/common.js"></script>
 <script src="../js/details.js"></script>
 </html>

@@ -202,6 +202,7 @@ a:hover {
 
 #nav .nav {
   height: 40px;
+  position: relative;
 }
 
 #nav .nav > li {
@@ -236,7 +237,7 @@ a:hover {
   height: 420px;
   border: 2px solid #C40000;
   background: #FFFFFF;
-  position: relative;
+  position: absolute;
 }
 
 #nav .nav .menu_2 > li {

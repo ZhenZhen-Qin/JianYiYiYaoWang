@@ -1,0 +1,5 @@
+
+// ga 统计"1件商品加入购物车"悬浮层点击去结算按钮次数
+function goto_settlement_detail() {
+    _behavior_tracker('BTN_GOTO_SETTLEMENT_DETAIL', 'BGD');
+}

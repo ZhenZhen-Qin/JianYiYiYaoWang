@@ -20,15 +20,19 @@
     <form class="fl" action="">
         <h3>用户注册</h3>
 
-        <label for="uname"><s>*</s>手机号</label>
-        <input type="text" placeholder="邮箱/用户名/手机号" id="uname"><br>
+        <label for="uname"><s>*</s>手机号 </label>
+        <input type="text" placeholder="邮箱/用户名/手机号" id="uname">
+        <span id="tel"></span><br>
         <label for="pwd"><s>*</s>设置密码</label>
-        <input type="password" id="pwd"><br>
+        <input type="password" id="pwd">
+        <span id="setPwd"></span><br>
         <label for="Cpwd"><s>*</s>确认密码</label>
-        <input type="password" id="Cpwd"><br>
+        <input type="password" id="Cpwd">
+        <span id="conPwd"></span><br>
         <label for="YanZM"><s>*</s>验证码</label>
         <input type="input" id="YanZM">
-        <span class="setYzm">3454</span>
+        <span class="setYzm">32454</span>
+        <span id="tishiYZM"></span>
         <p>
             <input type="checkbox">我已阅读并登录 <a href="#">《用户协议》</a>
 
@@ -36,7 +40,7 @@
         <input type="button" value="立即注册" id="registerBtn">
     </form>
     <div class="fr">
-        <img src="../images/register_01.png" alt="">
+        <a href="login.html"><img src="../images/register_01.png" alt=""></a>
     </div>
 </div>
 
@@ -46,5 +50,7 @@
     <p>j1.com All rights reserved 沪ICP备09007253号</p>
 </footer>
 </body>
-<script src="../js/login.js"></script>
+<script src="../js/jquery-3.2.1.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/register.js"></script>
 </html>

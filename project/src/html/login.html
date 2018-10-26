@@ -19,11 +19,12 @@
         </div>
         <form class="fr" action="">
             <h3>用户登录</h3>
-            <label for="#uname">账号</label>
-            <input type="text" placeholder="邮箱/用户名/手机号">
-            <label for="#pwd">密码</label>
-            <input type="password">
-            <p>
+            <p class="regit">没有账号？<a href="register.html">注册</a>一个吧</p>
+            <label for="uname">账号</label>
+            <input type="text" placeholder="邮箱/用户名/手机号" id="uname">
+            <label for="pwd">密码</label>
+            <input type="password" id="pwd">
+            <p class="p2">
                 <input type="checkbox">自动登录
                 <a href="#">忘记密码?</a>
             </p>
@@ -39,5 +40,6 @@
     </footer>
 
 </body>
+<script src="../js/jquery-3.2.1.js"></script>
 <script src="../js/login.js"></script>
 </html>

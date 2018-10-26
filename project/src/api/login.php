@@ -3,14 +3,25 @@
     $username = "root";
     $password = "";
     $dbname = "jianyimsg";
-    $conn = new myspli($servername,$username,$password,$dbname);
+    $conn = new mysqli($servername,$username,$password,$dbname);
     if($conn->connect_error){
-        die($conn->$connect_error);
+        die($conn->connect_error);
     }
-    $sql = 'select * from goodsmsg ORDER BY price asc';
+    $conn->set_charset('utf8');
+
+    $user = isset($_POST["user"]) ? $_POST["user"]:"";
+    $user = json_decode($user);
+
+    $sql = 'select * from user where uname = "'.$user->uname.'"';
     $result = $conn->query($sql);
-    $arr = $result->fetch_all(MYSQLI_ASSOC);
-    echo json_encode($arr,JSON_UNESCAPED_UNICODE);
+    $res = $result->fetch_row();
+
+    if($res[1] == $user->uname && $res[2] == $user->pwd){
+        echo "yes";
+    }else{
+        echo "no";
+    }
+
     $result->close();
     $conn->close();
 ?>

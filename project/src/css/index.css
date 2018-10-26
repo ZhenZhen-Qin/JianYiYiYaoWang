@@ -7,7 +7,7 @@ span.span4 {
 }
 
 #banner .banner #lunbo {
-  margin: 10px 10px 10px 15px;
+  margin: 10px 10px 10px 228px;
   position: relative;
 }
 
@@ -29,6 +29,10 @@ span.span4 {
   height: 20px;
   border-radius: 50%;
   background: #A49286;
+}
+
+#banner .banner #lunbo ul li {
+  float: left;
 }
 
 #banner .banner #lunbo > span {
@@ -98,9 +102,10 @@ span.span4 {
 }
 
 #banner .banner .banner_bottom {
-  margin-left: 14px;
+  margin-left: 227px;
   width: 741px;
   height: 140px;
+  border: 1px solid #DDDDDD;
   box-sizing: border-box;
   overflow: hidden;
   position: relative;
@@ -371,4 +376,9 @@ span.span4 {
 
 .btmHot ul li img {
   width: 80px;
+}
+
+.d2 {
+  padding: 0px 4px;
+  color: #C40000;
 }

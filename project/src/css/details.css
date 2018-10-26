@@ -133,6 +133,7 @@
   border: 1px solid #dddddd;
   padding: 0 4px;
   margin: 2px 5px;
+  position: relative;
 }
 
 #main .main .mainRight div.xzguige ul li > span {
@@ -141,13 +142,26 @@
   font-size: 12px;
 }
 
-#main .main .mainRight div.xzguige ul li s {
+#main .main .mainRight div.xzguige ul li > img {
   display: inline-block;
   width: 27px;
   height: 28px;
-  background: url("../images/goodimg/01.jpg") no-repeat;
-  background-size: cover;
   margin-top: 3px;
+}
+
+#main .main .mainRight div.xzguige ul li i {
+  position: absolute;
+  right: 1px;
+  bottom: 1px;
+  background: url(../images/newrapbg.png) right -50px no-repeat;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+}
+
+#main .main .mainRight div.xzguige ul .liActive {
+  border: 2px solid #C40000;
+  box-sizing: border-box;
 }
 
 #main .main .mainRight #addCar {
