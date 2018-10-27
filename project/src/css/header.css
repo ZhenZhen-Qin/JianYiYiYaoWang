@@ -36,6 +36,11 @@ a:hover {
   margin: 0 5px;
 }
 
+.header div.top li.d2 {
+  color: #c40000;
+  margin: 0px 6px;
+}
+
 .header div.top li.denglu a {
   color: #C40000;
 }
@@ -155,7 +160,7 @@ a:hover {
 
 .header div.logo div.logo_right div .logo_ul2 {
   width: 337px;
-  height: 80px;
+  min-height: 80px;
   left: -127px;
   box-sizing: border-box;
   border: 1px solid #dddddd;
@@ -182,8 +187,54 @@ a:hover {
   z-index: 3;
 }
 
-.header div.logo div.logo_right .shopCar:hover .logo_ul2 {
-  display: block;
+.header div.logo div.logo_right .shopCarHover .logo_ul2 ul.myShopCar {
+  z-index: 777;
+  width: 100%;
+}
+
+.header div.logo div.logo_right .shopCarHover .logo_ul2 ul.myShopCar li {
+  height: 70px;
+  line-height: 70px;
+  box-sizing: border-box;
+  font-size: 12px;
+  border-bottom: 1px dashed #DDDDDD;
+  margin: 5px 0px;
+}
+
+.header div.logo div.logo_right .shopCarHover .logo_ul2 ul.myShopCar li img {
+  width: 68px;
+  height: 68px;
+}
+
+.header div.logo div.logo_right .shopCarHover .logo_ul2 ul.myShopCar li p {
+  width: 170px;
+}
+
+.header div.logo div.logo_right .shopCarHover .logo_ul2 ul.myShopCar li p span:nth-child(1) {
+  display: inline-block;
+  line-height: 10px;
+  width: 100px;
+}
+
+.header div.logo div.logo_right .shopCarHover .logo_ul2 ul.myShopCar li > span {
+  width: 75px;
+  margin-top: 25px;
+}
+
+.header div.logo div.logo_right .shopCarHover .logo_ul2 ul.myShopCar li > span input.goodNum {
+  width: 18px;
+  height: 20px;
+  border: 1px solid #dddddd;
+  padding-left: 5px;
+}
+
+.header div.logo div.logo_right .shopCarHover .logo_ul2 ul.myShopCar li > span s {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  border: 1px solid #dddddd;
 }
 
 .header div.logo div.logo_right .yuyue:hover .logo_ul2 {

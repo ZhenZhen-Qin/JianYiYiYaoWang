@@ -10,11 +10,36 @@
     }
     $conn->set_charset('utf8');
 
-    $selectSql = 'select * from goodsmsg';
-    $result = $conn->query($selectSql);
-    $res = $result->fetch_all(MYSQLI_ASSOC);
-    echo json_encode($res);
+    $uname = isset($_GET["uname"])? $_GET["uname"] : "";
+    if($uname != ""){
 
-    $result->close();
-    $conn->close();
+        $selectSql = 'select * from goodsmsg';
+        $result = $conn->query($selectSql);
+        $res = $result->fetch_all(MYSQLI_ASSOC);
+
+         $selectSql1 = 'select * from shopcar where uname = "'.$uname.'"';
+         $selRes1 = $conn->query($selectSql1);
+         $selArr1 = $selRes1->fetch_all(MYSQLI_ASSOC);
+        // 数据格式化
+         $resArr = array(
+           "data" => $res,
+           "shopcar" => $selArr1 );
+
+        echo json_encode($resArr);
+        }else{
+             $selectSql = 'select * from goodsmsg';
+             $result = $conn->query($selectSql);
+             $res = $result->fetch_all(MYSQLI_ASSOC);
+             $resArr = array(
+                       "data" => $res,
+                      );
+
+             echo json_encode($resArr);
+
+        }
+
+
+
+        $result->close();
+        $conn->close();
 ?>

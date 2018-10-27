@@ -66,7 +66,7 @@ function movePic(){
             idx = 1;
             $banBtmUl[0].style.left = 0;
         }
-    },2000);
+    },3000);
     return timer;
 }
 $banBtmUl.on("mouseenter", function () {
@@ -91,7 +91,6 @@ if(location.search.split("?")[1]){
 }
 
 //a标签的默认行为
-console.log($(".nav>li"))
 $(".nav>li").on("click","a",function () {
     location.href = "html/listpage.html?uname=" + uname;
 
@@ -118,44 +117,46 @@ $(".Online_Consulting #img2").on("mouseleave",function () {
 });
 
 
+
 //促销活动
 var xhr = new XMLHttpRequest();
-    xhr.onreadystatechange = function(){
+xhr.onreadystatechange = function(){
         var status = [200,304];
         if(xhr.readyState == 4 && status.indexOf(xhr.status) != -1){
             var res = JSON.parse(xhr.responseText);
 
+            console.log(res);
             var str1 = "";
             var str2 = "";
             var str3 = "";
 
             for(let i=0;i<4;i++){
                 str1+= `
-                <li date-gid="${res[i].gid}">
-                    <img src="${res[i].imgurl}" alt="">
-                    <a class="hotlist_name">${res[i].gname}</a>
+                <li date-gid="${res.data[i].gid}">
+                    <img src="${res.data[i].imgurl}" alt="">
+                    <a class="hotlist_name">${res.data[i].gname}</a>
                     <p class="hotlist_price">
-                        秋季上新价：<span>${res[i].price}</span>元
+                        秋季上新价：<span>${res.data[i].price}</span>元
                     </p>
                 </li>`;
             }
             for(let i=5;i<9;i++){
                 str2+= `
-                <li date-gid="${res[i].gid}">
-                    <img src="${res[i].imgurl}" alt="">
-                    <a class="hotlist_name">${res[i].gname}</a>
+                <li date-gid="${res.data[i].gid}">
+                    <img src="${res.data[i].imgurl}" alt="">
+                    <a class="hotlist_name">${res.data[i].gname}</a>
                     <p class="hotlist_price">
-                        秋季上新价：<span>${res[i].price}</span>元
+                        秋季上新价：<span>${res.data[i].price}</span>元
                     </p>
                 </li>`;
             }
             for(let i=9;i<13;i++){
                 str3+= `
-                <li date-gid="${res[i].gid}">
-                    <img src="${res[i].imgurl}" alt=""  >
-                    <a class="hotlist_name">${res[i].gname}</a>
+                <li date-gid="${res.data[i].gid}">
+                    <img src="${res.data[i].imgurl}" alt=""  >
+                    <a class="hotlist_name">${res.data[i].gname}</a>
                     <p class="hotlist_price">
-                        秋季上新价：<span>${res[i].price}</span>元
+                        秋季上新价：<span>${res.data[i].price}</span>元
                     </p>
                 </li>`;
             }
@@ -165,10 +166,71 @@ var xhr = new XMLHttpRequest();
             $($(".hot_content")[2]).html(str3);
             $($(".hot_content")[0]).show().nextAll().hide();
 
+            if(res.shopcar){
+
+
+                //    显示购物车
+                var str1 = "";
+                res.shopcar.map(function (item,idx) {
+                    str1 += `
+                    <li class="clearfix">
+                                <img class="fl" src="images/${item.imgurl}" alt="">
+                                <p class="fl">
+                                    <span>${item.gname}</span>
+                                    <span>${item.price}</span>
+                                </p>
+                                <span class="clearfix fl number">
+                                    <s class="fl btnJia">-</s>
+                                    <input type="text" class="fl goodNum" value="${item.num}">
+                                    <s class="fl btnJian">+</s>
+                                    </span>
+                            </li> `;
+                });
+
+                $(".shopCar .logo_ul2").append($("<ul>").html(str1).addClass("myShopCar")).find("div").hide();
+
+                //移入购物车的效果
+                $(".shopCar").on("mouseenter",function(){
+                    $(".shopCar .logo_ul2").stop().show().parent().addClass("shopCarHover");
+                });
+                $(".shopCar .logo_ul2").on("mouseleave",function(){
+                    $(this).stop().hide(500);
+                });
+
+                //点击添加加减商品的数量  商品数量的加减按钮
+                $(".number").on("click","s",function(){
+                    if($(this).html() == "-"){
+                        var num = $(this).next().val();
+                        num--;
+                        if(num <= 0){num=0;}
+                        $(this).next().val(num);
+
+
+                    }else if($(this).html() == "+"){
+                        var num = $(this).prev().val();
+                        num++;
+                        if(num <= 0){num=0;}
+                        $(this).prev().val(num);
+                    }
+                });
+
+
+
+
+            }
+
+
         }
     };
 xhr.open("get","api/index.php");
 xhr.send(null);
+
+if(uname != ""){
+    xhr.open("get","api/index.php?uname="+uname);
+    xhr.send(null);
+}
+
+
 
 $(".ht_li")[0].children[0].classList.add("lihover");
 $(".ht_li").on("mouseenter","li",function(){
@@ -185,8 +247,21 @@ $("#good_hot .hot_content").on("click","li",function(){
 });
 
 
+if(uname){
+    $(".signout").html("退出").css("color","#c40000").on("click",function(){
+        location.href = "html/login.html";
+    })
+}
 
-
+$(".goShopCar").on("click",function () {
+    if(uname){
+        location.href = "html/shopCar.html?uname="+uname;
+    }else {
+        if(confirm("您还未登录，前往登录")){
+            location.href = "html/login.html";
+        }
+    }
+})
 
 
 

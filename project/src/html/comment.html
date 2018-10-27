@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>详情页</title>
+    <title>评论页</title>
     <link rel="stylesheet" href="../css/base_px.css">
     <link rel="stylesheet" href="../fonts/iconfont.css">
     <link rel="stylesheet" href="../css/header.css">
@@ -18,14 +18,14 @@
                 <span>收藏健一医药网</span>
                 <span>设为首页</span>
             </p>
-            <ul class="clearfix fr">
+            <ul class="clearfix fr" id="denglu">
                 <li>
                     您好！欢迎来到健一网网上药店
                 </li>
-                <li class="denglu">
+                <li class="denglu d1">
                     [<a href="#">登录</a>]
                 </li>
-                <li class="denglu">
+                <li class="denglu d2">
                     [<a href="#">注册</a>]
                 </li>
                 <li>
@@ -655,7 +655,7 @@
                 <h3>其他买家需要您的建议哟！</h3>
                 <p>描述相符：
                     <label for="star5">
-                        <input type="radio" id="star5" name="star">5星
+                        <input type="radio" id="star5" name="star" checked>5星
                     </label>
                     <label for="star4">
                         <input type="radio" id="star4" name="star">4星
@@ -672,11 +672,11 @@
                 </p>
                 <div>
                     <h4>评价商品：</h4>
-                    <textarea name="pingjiaContent" id="" cols="30" rows="10"></textarea>
-                    <p><span>58</span>/300</p>
+                    <textarea maxlength="300" class="pingjiaContent" name="pingjiaContent" id="" cols="30" rows="10"></textarea>
+                    <p><span class="len">0</span>/300</p>
                     <div>
                         <h6>你可以选择图片</h6>
-                        <input type="file">
+                        <input class="imgFile" type="file">
                     </div>
                 </div>
                 <input type="button" value="提交" id="subBtn">
@@ -833,5 +833,6 @@
 <script src="../js/jquery-3.2.1.js"></script>
 <script src="../lib/jquery-Carousel/jquery-Carousel.js"></script>
 <script src="../js/common.js"></script>
-<script src="../js/details.js"></script>
+<!--<script src="../js/details.js"></script>-->
+<script src="../js/comment.js"></script>
 </html>

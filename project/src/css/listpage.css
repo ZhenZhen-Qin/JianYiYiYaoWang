@@ -277,6 +277,17 @@
   border: 1px solid #dddddd;
 }
 
+#main .mainRight #goodlist ul.goodlist li > div > p > span {
+  float: left;
+  display: inline-block;
+  width: 90px;
+  height: 30px;
+  margin-right: 5px;
+  line-height: 30px;
+  text-align: center;
+  border: 1px solid #dddddd;
+}
+
 #main .mainRight #goodlist .setPage {
   text-align: right;
   height: 54px;
@@ -313,7 +324,7 @@
 }
 
 #main .mainRight #goodlist .setPage form input:nth-child(1) {
-  width: 30px;
+  width: 37px;
   height: 24px;
   border: 1px solid #dddddd;
 }

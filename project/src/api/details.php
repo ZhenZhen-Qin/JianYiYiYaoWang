@@ -11,14 +11,47 @@
     $conn->set_charset('utf8');
 
     $gid = isset($_GET["gid"])? $_GET["gid"] : "";
+    $uname = isset($_GET["uname"])?$_GET["uname"]:"";
+
     if($gid != ""){
         $selectSql = 'select * from goodsmsg where gid = '.$gid;
         $selRes = $conn->query($selectSql);
         $selResult = $selRes->fetch_all(MYSQLI_ASSOC);
-        echo json_encode($selResult,JSON_UNESCAPED_UNICODE);
 
-        $selRes->close();
+        //拿到商品评价
+        $selectSql2 = 'select * from comment where gid = '.$gid;
+        $selRes2 = $conn->query($selectSql2);
+        $selResult2 = $selRes2->fetch_all(MYSQLI_ASSOC);
+
+
+        if($uname != ""){
+                $selectSql1 = 'select * from shopcar where uname = '.$uname;
+                $selRes1 = $conn->query($selectSql1);
+                $selResult1 = $selRes1->fetch_all(MYSQLI_ASSOC);
+                $resArr = array(
+                                "gooddata" => $selResult,
+                                "shopcar" => $selResult1,
+                                "comment" => $selResult2
+                            );
+                echo json_encode($resArr,JSON_UNESCAPED_UNICODE);
+
+                $selRes1->close();
+        }else{
+            $resArr = array(
+                "gooddata" => $selResult,
+                "comment" => $selResult2
+            );
+            echo json_encode($resArr,JSON_UNESCAPED_UNICODE);
+            $selRes->close();
+        }
+
+
     }
+
+
+
+
+
 
     $shopcar =  isset($_POST["shopcar"])? $_POST["shopcar"] : "";
 

@@ -11,20 +11,20 @@
 <body>
     <!--头部信息-->
     <header id="header">
-    <div class="con clearfix header">
+        <div class="con clearfix header">
         <div class="clearfix top">
             <p class="fl">
                 <span>收藏健一医药网</span>
-                <span>设为首页</span>
+                <span class="signout">设为首页</span>
             </p>
-            <ul class="clearfix fr">
+            <ul class="clearfix fr" id="denglu">
                 <li>
                     您好！欢迎来到健一网网上药店
                 </li>
-                <li class="denglu">
-                    [<a href="#">登录</a>]
+                <li class="denglu d1">
+                    [<a href="login.html">登录</a>]
                 </li>
-                <li class="denglu">
+                <li class="denglu d2">
                     [<a href="#">注册</a>]
                 </li>
                 <li>
@@ -94,6 +94,21 @@
                             <span>购物车空空如也赶紧选购吧</span>
                         </div>
                         <!--有商品的时候生成商品列表-->
+                        <!--<ul class="myShopCar">-->
+                            <!--<li>-->
+                                <!--<img src="../images/goodimg/01.jpg" alt="">-->
+                                <!--<p>-->
+                                    <!--<span></span>-->
+                                    <!--<span></span>-->
+                                <!--</p>-->
+                                <!--<span class="clearfix number">&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<s class="fl btnJia">-</s>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<input type="text" class="fl goodNum">&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<s class="fl btnJian">+</s>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;</span>&ndash;&gt;-->
+                            <!--</li>-->
+                        <!--</ul>-->
+
                     </div>
                 </div>
 
@@ -115,7 +130,7 @@
             </div>
         </div>
     </div>
-</header>
+    </header>
     <!--导航-->
     <nav id="nav">
     <ul class="con nav">
@@ -560,7 +575,7 @@
             </ul>
         </li>
         <li>
-            <a href="#">首页</a>
+            <a href="#" class="goIndex">首页</a>
         </li>
         <li>
             <a href="#">专科药品</a>
@@ -763,22 +778,22 @@
                     </div>
                     <!--商品列表-->
                     <ul class="clearfix goodlist">
-                        <!--<li>-->
-                            <!--<img src="../images/goodimg/01.jpg" alt="">-->
-                            <!--<a href="#">菊晨 胎菊王(特级) 40g</a>-->
-                            <!--<span>￥<s>78</s></span>-->
+                        <!--<li date-gid="${item.gid}">-->
+                            <!--<img src="../${item.imgurl}" alt="">-->
+                            <!--<a href="#">${item.gname}</a>-->
+                            <!--<span>￥<s>${item.price}</s></span>-->
                             <!--<div>-->
                                 <!--总销量-->
-                                <!--<span>2343</span>-->
+                                <!--<span>${item.xiaoliang}</span>-->
                                 <!--<a href="#">-->
-                                    <!--<s>4355</s>条评论-->
+                                    <!--<s>${item.comment}</s>条评论-->
                                 <!--</a>-->
                                 <!--<p>-->
-                                    <!--<a href="#">-->
+                                    <!--<a href="#" class="addCar">-->
                                         <!--<i class="iconfont icon-gouwuchekong"></i>-->
                                         <!--加入购物车-->
                                     <!--</a>-->
-                                    <!--<a href="#">查看详情</a>-->
+                                    <!--<a href="details.html?gid=${item.gid}&uname=${uname}">查看详情</a>-->
                                 <!--</p>-->
                             <!--</div>-->
                         <!--</li>-->
@@ -787,13 +802,13 @@
                     <div class="clearfix setPage">
                             <span>共 <s class="goodLen"></s> 条</span>
                             <s  class="shouye">首页</s>
-                            <s>上一页</s>
+                            <s class="prevPage">上一页</s>
                             <div class="page"></div>
-                            <s>下一页</s>
-                            <s>末页</s>
+                            <s class="nextPrev">下一页</s>
+                            <s class="endPage">末页</s>
                             <form action="">
                                 第 <input type="number">页
-                                <input type="button" value="确定">
+                                <input class="dijiPage" type="button" value="确定">
                             </form>
                     </div>
                 </div>

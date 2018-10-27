@@ -8,7 +8,8 @@ if(uname){
         var str = "";
         if(xhr.readyState == 4 && status.indexOf(xhr.status)!=-1){
             var res = JSON.parse(xhr.responseText);
-            res.map(function (item) {
+            console.log(res.shopcar);
+            res.data.map(function (item) {
                 str += `
                 <li>
                     <input type="checkbox" class="danXuan">
@@ -29,7 +30,6 @@ if(uname){
                         <span class="delBtn">删除</span>
                     </p>
                 </li>`;
-
             });
             $(".myGoods").html(str);
 
@@ -58,8 +58,7 @@ if(uname){
             });
 
 
-            //点击添加加减商品的数量
-            //商品数量的加减按钮
+            //点击添加加减商品的数量  商品数量的加减按钮
             $(".number").on("click","s",function(){
                 var zjTol = $(".zongjia").html()*1;   //增加或减少时获取总价
                if($(this).html() == "-"){
@@ -112,23 +111,60 @@ if(uname){
 
             //删除单个商品
             $(".myGoods li").on("click",".delBtn",function(){
-                $(this).parent().parent().remove();
-                if($(".myGoods")[0].children.length <=0){
-                    $(".myGoods").append("<li id='qingkong'><i class='iconfont icon-gouwuchekong'></i>您的购物已经没有商品咯！赶快选购吧！</li>")
+
+                if(confirm("确定要删除该商品吗？")){
+
+                    var chrrentgid = Number($(this).closest("li").find(".gId").html());
+                    console.log(chrrentgid);
+                    $(this).parent().parent().remove();
+                    if($(".myGoods")[0].children.length <=0){
+                        $(".myGoods").append("<li id='qingkong'><i class='iconfont icon-gouwuchekong'></i>您的购物已经没有商品咯！赶快选购吧！</li>")
+                    }
+
+                    xhr.onreadystatechange = function(){
+                        var status = [200,304];
+                        if(xhr.readyState == 4 && status.indexOf(xhr.status) != -1){
+                            $(this).parent().parent().remove();
+                        }
+                    };
+                    xhr.open("get","../api/shopcar.php?uname="+uname+"&delSingle="+chrrentgid);
+                    // xhr.setRequestHeader('content-type','application/x-www-form-urlencoded');
+                    xhr.send(null);
                 }
+
             });
 
         //    批量删除
             $("#pilDel").on("click",function(){
-                $(".danXuan").filter(":checked").parent().remove();
-                if($(".myGoods")[0].children.length <=0){
-                    $(".myGoods").append("<li id='qingkong'><i class='iconfont icon-gouwuchekong'></i>您的购物已经没有商品咯！赶快选购吧！</li>")
-                    $("#allCheck").prop("checked",false);
+                if(confirm("确认删除选中的商品？")){
+                    //$(".danXuan").filter(":checked").parent().remove();
+                    var len = $(".danXuan").filter(":checked").length;
+
+                    if($(".myGoods")[0].children.length <=0){
+                        $(".myGoods").append("<li id='qingkong'><i class='iconfont icon-gouwuchekong'></i>您的购物已经没有商品咯！赶快选购吧！</li>")
+                        $("#allCheck").prop("checked",false);
+                    }
+                    $(".zongjia").html(0.00);
+                    $(".xzGoodLen").html(0);
+
+                    xhr.onreadystatechange = function(){
+                        var status = [200,304];
+                        if(xhr.readyState == 4 && status.indexOf(xhr.status) != -1){
+                            $(".danXuan").filter(":checked").parent().remove();
+                        }
+                    };
+
+                    var gidArr = [];
+                    for(let i=0;i<len;i++){
+                        var gid = $($(".danXuan").filter(":checked")[i]).siblings(".gId").html();
+                        gidArr.push(Number(gid));
+                    }
+
+                    xhr.open("get","../api/shopcar.php?uname="+uname+"&gidArr="+String(gidArr));
+                    xhr.send(null);
 
                 }
 
-                $(".zongjia").html(0.00);
-                $(".xzGoodLen").html(0);
             });
 
         }
@@ -140,8 +176,9 @@ if(uname){
 
 
 
-
-
+$(".jixuShopping").on("click",function () {
+    location.href = "listpage.html?uname="+uname;
+});
 
 
 
