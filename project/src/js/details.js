@@ -9,7 +9,6 @@ $("div.price .sm").on("mouseleave",function(){
 // 接受登录传过来的用户名,并显示在顶部
 //接收来自首页的gid  向PHP发送请求
 
-console.log(location.search);
 
 var uname = location.search.split("?")[1].split("&")[1].split("=")[1];
 var gid = location.search.split("?")[1].split("&")[0].split("=")[1];
@@ -26,7 +25,6 @@ function getGidMsg(){
     xhr.onreadystatechange = function(){
         var status = [200,304];
         if(xhr.readyState == 4 && status.indexOf(xhr.status) != -1){
-            console.log(xhr.responseText);
             var res = JSON.parse(xhr.responseText);
             $(".Gid").html(res.gooddata[0].gid);
             $(".Gname").html(res.gooddata[0].gname);
@@ -119,13 +117,16 @@ function getGidMsg(){
 
         }
     };
-    xhr.open("get","../api/details.php?gid="+gid);
-    xhr.send(null);
-
     if(uname){
         xhr.open("get","../api/details.php?gid="+gid+"&uname="+uname);
         xhr.send(null);
+    }else {
+        xhr.open("get","../api/details.php?gid="+gid);
+        xhr.send(null);
     }
+
+
+
 }
 
 //放大镜
@@ -196,31 +197,35 @@ $(".smortImg").on("click","li",function () {
 
 //点击添加购物车
 $("#addCar").on("click",function(){
-    var goodobj = {
-        uname : uname,
-        gid : gid,
-        gname :$(".Gname").html(),
-        guige :$(".Guige").html(),
-        price : Number($(".Price").html()),
-        imgurl : $(".smortImg li img").attr("src"),
-        manufactor : $(".Manufactor").html(),
-        num : Number($("#goodNum").val())
-    };
-    xhr.onreadystatechange = function(){
-        var status = [200,304];
-        if(xhr.readyState == 4 && status.indexOf(xhr.status) != -1){
+    if(uname != ""){
+        var goodobj = {
+            uname : uname,
+            gid : gid,
+            gname :$(".Gname").html(),
+            guige :$(".Guige").html(),
+            price : Number($(".Price").html()),
+            imgurl : $(".smortImg li img").attr("src"),
+            manufactor : $(".Manufactor").html(),
+            num : Number($("#goodNum").val())
+        };
+        xhr.onreadystatechange = function(){
+            var status = [200,304];
+            if(xhr.readyState == 4 && status.indexOf(xhr.status) != -1){
 
-            console.log(xhr.responseText);
-            if(xhr.responseText == "yes"){
-                alert("加入购物车成功");
-                location.href = "shopcar.html?uname="+uname;
+                if(xhr.responseText == "yes"){
+                    alert("加入购物车成功");
+                    location.href = "shopcar.html?uname="+uname;
+                }
+
             }
+        };
+        xhr.open("post","../api/details.php");
+        xhr.setRequestHeader('content-type','application/x-www-form-urlencoded');
+        xhr.send("shopcar="+ JSON.stringify(goodobj));
+    }else if(confirm("您还没有登录,前往登录？")) {
+       location.href = "login.html";
+    }
 
-        }
-    };
-    xhr.open("post","../api/details.php");
-    xhr.setRequestHeader('content-type','application/x-www-form-urlencoded');
-    xhr.send("shopcar="+ JSON.stringify(goodobj));
 });
 
 
@@ -250,8 +255,64 @@ $(".goIndex").on("click",function(){
 //评价内容
 $(".comment").on("click",function () {
     if(uname){
-        console.log(999);
         location.href = "comment.html?uname="+uname+"&gid="+gid;
     }
 });
+
+
+//放大镜
+var Box = document.getElementById("Box");
+var bigBox = document.getElementById("bigBox");
+var bigbox = bigBox.children[0];
+var lay = document.getElementById("lay");
+Fangdajing(Box,bigBox,bigbox,lay);
+function Fangdajing(Box,bigBox,bigbox,lay) {
+    //鼠标移入时，将放大镜和bigBox显示出来
+    Box.onmouseover = function () {
+        lay.style.display = "block";
+        bigBox.style.display = "block";
+    }
+    //鼠标移出时，将放大镜和bigBox隐藏起来
+    Box.onmouseout = function () {
+        lay.style.display = "none";
+        bigBox.style.display = "none";
+    }
+    Box.onmousemove = function (e) {
+        e = e || event;//事件源的兼容问题
+        var scale = 4;//图片的放缩比例
+        //将鼠标放到放大镜的中间
+        var x = e.clientX-60-lay.offsetWidth/2;
+        var y = e.clientY+30-lay.offsetHeight/2;
+        //将放大镜的宽高与盒子的宽高结合起来按比例放缩
+        lay.style.width = parseInt(Box.offsetWidth / scale) + "px";
+        lay.style.height = parseInt(Box.offsetHeight / scale) + "px";
+        //设置大盒子的宽高
+        bigbox.style.width = Box.offsetWidth * scale + "px";
+        bigbox.style.height = Box.offsetHeight * scale + "px";
+        if (x < 0) {
+            x = 0;//左边界的判断，当超出时将x置为0;
+        }
+        //右边界的判断，当超出时将x置为Box的宽度减去放大镜的宽度;
+        if (x >= Box.offsetWidth - lay.offsetWidth) {
+            x = Box.offsetWidth - lay.offsetWidth;
+        }
+        //下边界的判断，当超出时将y置为Box的高度减去放大镜的高度;
+        if (y >= Box.offsetHeight - lay.offsetHeight) {
+            y = Box.offsetHeight - lay.offsetHeight;
+        }
+        if (y < 0) {
+            y = 0;//上边界的判断，当超出时将y置为0;
+        }
+        lay.style.left = x  + "px";
+        lay.style.top = y  + "px";
+        //同比例放缩，大的盒子图片的放缩比例，当小盒子向右移动的时候，大盒子向左移动同等的比例的宽高，方向是相反的
+        var left = lay.offsetLeft * scale;
+        var top = lay.offsetTop * scale;
+        bigbox.style.marginLeft = (left * (-1)) + "px";
+        bigbox.style.marginTop = (top * (-1)) + "px";
+
+    }
+
+}
+
 

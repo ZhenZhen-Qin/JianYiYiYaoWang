@@ -1,10 +1,12 @@
 @charset "UTF-8";
 #nav ul li.allGoodsCategory .menu_2 {
   display: none;
+  z-index: 999;
 }
 
 #nav ul li.allGoodsCategory:hover .menu_2 {
   display: block;
+  z-index: 999;
 }
 
 #main .main h3.mainTop {
@@ -492,4 +494,37 @@
 #main .SamePinpai .sameRight .comment .setPage form input:nth-child(2) {
   height: 24px;
   padding: 0 5px;
+}
+
+#Box{
+  height:300px;
+  width:300px;
+  position: relative;
+  border:1px solid gray;
+}
+#bigBox{
+  background: #FFFFFF;
+  z-index: 99;
+  height:400px;
+  width:400px;
+  position: absolute;
+  top:260px;
+  left:510px;
+  overflow: hidden;
+  display:none;
+  border: 1px solid gray;
+}
+#Box img{
+  height:300px;
+  width:300px;
+}
+#lay{
+  background:#fff;
+  border:1px solid gray;
+  position: absolute;
+  top:0;
+  left: 0;
+  opacity:0.5;
+  display:none;
+  filter:alpha(opacity=50);
 }

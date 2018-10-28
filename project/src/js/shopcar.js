@@ -8,7 +8,7 @@ if(uname){
         var str = "";
         if(xhr.readyState == 4 && status.indexOf(xhr.status)!=-1){
             var res = JSON.parse(xhr.responseText);
-            console.log(res.shopcar);
+            console.log(res.data);
             res.data.map(function (item) {
                 str += `
                 <li>

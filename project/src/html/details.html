@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="../lib/magiczoom/magiczoom.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/details.css">
+
+
 </head>
 <body>
     <!--头部信息-->
@@ -589,12 +591,19 @@
                 <a href="../index.html">菊晨 胎菊王(特级) 40g</a>
             </h3>
             <div class="fl mainLeft">
-                <div class="imgMsg">
-                    <img class="Imgurl bigImg" src="../images/goodimg/01.jpg" alt="">
-                </div>
+                <!--<div class="imgMsg">-->
+                    <!--<img class="Imgurl bigImg" src="../images/goodimg/01.jpg" alt="">-->
+                <!--</div>-->
                 <!--<div class="imgMsg jqzoom">-->
                     <!--<img src="../images/goodimg/00.jpg" class="Imgurl bigImg fs" alt="" jqimg="../images/goodimg/00.jpg" id="bigImg" />-->
                 <!--</div>-->
+                <div id="Box" class="imgMsg">
+                    <img class="Imgurl bigImg"  src="../images/goodimg/01.jpg"/>
+                    <span id="lay"></span>
+                </div>
+                <div id="bigBox">
+                    <img class="Imgurl bigImg"  src="../images/goodimg/01.jpg" />
+                </div>
 
                 <div class="clearfix imgDetails">
                     <span class="fl"><i class="iconfont icon-jiantouzuo"></i></span>
@@ -1037,6 +1046,68 @@
     </div>
 
 </body>
+
+<script>
+
+
+    var Box = document.getElementById("Box");
+    var bigBox = document.getElementById("bigBox");
+    var bigbox = bigBox.children[0];
+    var lay = document.getElementById("lay");
+    Fangdajing(Box,bigBox,bigbox,lay);
+    function Fangdajing(Box,bigBox,bigbox,lay) {
+        //鼠标移入时，将放大镜和bigBox显示出来
+        Box.onmouseover = function () {
+            lay.style.display = "block";
+            bigBox.style.display = "block";
+            console.log(888)
+        }
+        //鼠标移出时，将放大镜和bigBox隐藏起来
+        Box.onmouseout = function () {
+            lay.style.display = "none";
+            bigBox.style.display = "none";
+        }
+        Box.onmousemove = function (e) {
+            e = e || event;//事件源的兼容问题
+            var scale = 4;//图片的放缩比例
+            //将鼠标放到放大镜的中间
+            var x = e.clientX-60-lay.offsetWidth/2;
+            var y = e.clientY+30-lay.offsetHeight/2;
+            //将放大镜的宽高与盒子的宽高结合起来按比例放缩
+            lay.style.width = parseInt(Box.offsetWidth / scale) + "px";
+            lay.style.height = parseInt(Box.offsetHeight / scale) + "px";
+            //设置大盒子的宽高
+            bigbox.style.width = Box.offsetWidth * scale + "px";
+            bigbox.style.height = Box.offsetHeight * scale + "px";
+            if (x < 0) {
+                x = 0;//左边界的判断，当超出时将x置为0;
+            }
+            //右边界的判断，当超出时将x置为Box的宽度减去放大镜的宽度;
+            if (x >= Box.offsetWidth - lay.offsetWidth) {
+                x = Box.offsetWidth - lay.offsetWidth;
+            }
+            //下边界的判断，当超出时将y置为Box的高度减去放大镜的高度;
+            if (y >= Box.offsetHeight - lay.offsetHeight) {
+                y = Box.offsetHeight - lay.offsetHeight;
+            }
+            if (y < 0) {
+                y = 0;//上边界的判断，当超出时将y置为0;
+            }
+            lay.style.left = x  + "px";
+            lay.style.top = y  + "px";
+            //同比例放缩，大的盒子图片的放缩比例，当小盒子向右移动的时候，大盒子向左移动同等的比例的宽高，方向是相反的
+            var left = lay.offsetLeft * scale;
+            var top = lay.offsetTop * scale;
+            bigbox.style.marginLeft = (left * (-1)) + "px";
+            bigbox.style.marginTop = (top * (-1)) + "px";
+
+        }
+
+    }
+
+
+</script>
+
 <script src="../js/jquery-3.2.1.js"></script>
 <script src="../lib/jquery-Carousel/jquery-Carousel.js"></script>
 <script src="../lib/magiczoom/magiczoom.js"></script>

@@ -8,7 +8,7 @@
     if($conn->connect_error){
         die($conn->connect_error);
     }
-    $conn->set_charset("utf-8");
+    $conn->set_charset("utf8");
 
     $uname = isset($_GET["uname"])? $_GET["uname"] : "";
     $delSingleId = isset($_GET["delSingle"])?$_GET["delSingle"]:"";
@@ -44,6 +44,7 @@
         $selArr = $selRes->fetch_all(MYSQLI_ASSOC);
         $resArr = array("data" => $selArr);
         echo json_encode($resArr,JSON_UNESCAPED_UNICODE);
+
         $selRes->close();
     }
 
