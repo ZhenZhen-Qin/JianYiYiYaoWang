@@ -19,5 +19,4 @@
         echo "error";
     }
 
-    $conn->
 ?>
