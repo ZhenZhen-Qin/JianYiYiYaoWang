@@ -49,7 +49,7 @@ $("#subBtn").on("click",function(){
     xhr.onreadystatechange = function(){
         if(xhr.readyState == 4 && [200,304].indexOf(xhr.status) != -1){
             console.log(xhr.responseText);
-            if(xhr.responseText  == "success"){
+            if($.trim(xhr.responseText)  == "success"){
                 alert("评论成功");
                 location.href="details.html?gid="+gid+"&uname="+uname+"#pingjiaMsg";
             }else {
@@ -62,8 +62,6 @@ $("#subBtn").on("click",function(){
     xhr.setRequestHeader('content-type','application/x-www-form-urlencoded');
     xhr.send("commentObj="+JSON.stringify(commentObj));
 
-
-    console.log(file);
 });
 
 
