@@ -528,3 +528,18 @@
   display:none;
   filter:alpha(opacity=50);
 }
+
+#goTop{
+  background: #f0f0f0;
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+}
+
+#goTop i{
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: url("../images/gototop.png")no-repeat;
+  background-size: 100% 100%;
+}

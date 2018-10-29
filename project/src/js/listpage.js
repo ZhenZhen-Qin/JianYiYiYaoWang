@@ -732,7 +732,26 @@ $(".goIndex").on("click",function(){
         location.href = "../index.html";
     }
 });
-
+//去购物车
+$(".goShopCar").on("click",function () {
+    if(uname){
+        location.href = "shopCar.html?uname="+uname;
+    }else {
+        if(confirm("您还未登录，前往登录")){
+            location.href = "login.html";
+        }
+    }
+});
+//吸顶菜单
+window.onscroll = function () {
+    console.log(window.scrollY)
+  if(window.scrollY > 200){
+      $("#nav").css("position","fixed");
+      $("#nav").css("top","0px").css("z-index","9999");
+  }else if(window.scrollY < 200){
+      $("#nav").css("position","relative");
+  }
+};
 
 
 

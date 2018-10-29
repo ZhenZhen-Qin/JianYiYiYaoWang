@@ -261,8 +261,19 @@ $(".goShopCar").on("click",function () {
             location.href = "html/login.html";
         }
     }
-})
+});
 
+
+//吸顶菜单
+window.onscroll = function () {
+    console.log(window.scrollY)
+    if(window.scrollY > 200){
+        $("#nav").css("position","fixed");
+        $("#nav").css("top","0px").css("z-index","9999");
+    }else if(window.scrollY < 200){
+        $("#nav").css("position","relative");
+    }
+};
 
 
 

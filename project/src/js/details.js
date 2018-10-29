@@ -129,11 +129,6 @@ function getGidMsg(){
 
 }
 
-//放大镜
-
-
-
-
 
 //商品数量的加减按钮
 $("#number .btnJia").on("click",function () {
@@ -315,4 +310,51 @@ function Fangdajing(Box,bigBox,bigbox,lay) {
 
 }
 
+//前往购物车
+$(".goShopCar").on("click",function () {
+    if(uname){
+        location.href = "shopCar.html?uname="+uname;
+    }else {
+        if(confirm("您还未登录，前往登录")){
+            location.href = "login.html";
+        }
+    }
+});
 
+//吸顶菜单
+window.onscroll = function () {
+    console.log(window.scrollY)
+    if(window.scrollY > 200){
+        $("#nav").css("position","fixed");
+        $("#nav").css("top","0px").css("z-index","9999");
+    }else if(window.scrollY < 200){
+        $("#nav").css("position","relative");
+    }
+};
+
+// 置顶
+$("#goTop").hide();
+window.onscroll = function(){
+    if(window.scrollY >= 1000){
+        $("#goTop").show();
+    }
+    if(window.scrollY <= 1000){
+        $("#goTop").hide();
+    }
+}
+$("#goTop").click(function () {
+    clearInterval(timer);
+    var timer = setInterval(function(){
+        var currentTop = window.scrollY;
+        var speed = Math.floor((0-currentTop)/10);
+        currentTop += speed;
+        if(currentTop == 0){
+            // currentTop = 0;
+            clearInterval(timer);
+        }
+        // window.scrollTo(0,currentTop);
+        window.scrollBy(0,speed);
+        console.log(speed);
+
+    }, 20)
+});

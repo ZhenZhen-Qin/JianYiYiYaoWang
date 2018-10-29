@@ -64,5 +64,3 @@ $("#subBtn").on("click",function(){
 
 });
 
-
-//
